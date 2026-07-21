@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls -la \"C:/Users/reids/OneDrive/WEBSITE WORK/Websites/FLOWER BLOOM STUDIO/claude design sites/connect to github/\" && echo \"---PARENT---\" && ls -la \"C:/Users/reids/OneDrive/WEBSITE WORK/Websites/FLOWER BLOOM STUDIO/claude design sites/\")",
+      "Bash(git --version)",
+      "Bash(gh --version)",
+      "Bash(gh auth *)",
+      "Bash(git config *)",
+      "Read(//c/Users/reids/.config/**)",
+      "Read(//c/Users/reids/**)",
+      "Bash(cp -r 'C:/Users/reids/OneDrive/WEBSITE WORK/Websites/FLOWER BLOOM STUDIO/claude design sites/Bloom Studios Website Spec v3-handoff/bloom-studios-website-spec-v3/README.md' 'C:/Users/reids/OneDrive/WEBSITE WORK/Websites/FLOWER BLOOM STUDIO/claude design sites/connect to github/')",
+      "Bash(cp -r 'C:/Users/reids/OneDrive/WEBSITE WORK/Websites/FLOWER BLOOM STUDIO/claude design sites/Bloom Studios Website Spec v3-handoff/bloom-studios-website-spec-v3/project' 'C:/Users/reids/OneDrive/WEBSITE WORK/Websites/FLOWER BLOOM STUDIO/claude design sites/connect to github/')"
+    ]
+  }
+}

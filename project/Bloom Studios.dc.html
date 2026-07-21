@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+<template id="__bundler_thumbnail" data-bg-color="#0D1F13"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><rect width="200" height="200" fill="#0D1F13"/><text x="100" y="118" text-anchor="middle" font-family="sans-serif" font-weight="800" font-size="64" fill="#2FBF71">B</text></svg></template>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&amp;family=Inter:ital,wght@0,400;0,500;0,600;1,400&amp;display=swap" rel="stylesheet">
+<style>
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,system-ui,sans-serif;background:#0D1F13}
+a{color:#2FBF71;text-decoration:none}
+a:hover{color:#7FE0A8}
+::selection{background:#2FBF71;color:#0D1F13}
+input::placeholder,textarea::placeholder{color:rgba(244,241,234,0.4)}
+summary{list-style:none}
+summary::-webkit-details-marker{display:none}
+@keyframes tickerMove{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+</style>
+</helmet>
+
+<nav style="position:fixed;top:0;left:0;right:0;z-index:100;background:{{ navBg }};border-bottom:{{ navBorder }};transition:background 0.3s,border-color 0.3s">
+  <div style="max-width:1180px;margin:0 auto;padding:16px 24px;display:flex;align-items:center;justify-content:space-between">
+    <a href="#top" style="display:flex;align-items:center;gap:10px">
+      <img src="uploads/bloom-logo.png" alt="Bloom Studios" style="height:38px;width:auto">
+      <span style="font-family:Syne,sans-serif;font-weight:800;font-size:19px;color:#F4F1EA;letter-spacing:0.01em">Flower Bloom Studios</span>
+    </a>
+    <div style="display:flex;align-items:center;gap:32px">
+      <a href="#top" style="font-weight:500;font-size:16px;color:#F4F1EA" style-hover="color:#7FE0A8">Home</a>
+      <a href="Portfolio.dc.html" style="font-weight:500;font-size:16px;color:#F4F1EA" style-hover="color:#7FE0A8">Work</a>
+      <a href="#services" style="font-weight:500;font-size:16px;color:#F4F1EA" style-hover="color:#7FE0A8">Services</a>
+      <a href="#contact" style="font-weight:500;font-size:16px;color:#F4F1EA" style-hover="color:#7FE0A8">Contact</a>
+      <a href="#contact" style="font-weight:600;font-size:16px;color:#0D1F13;background:#2FBF71;padding:11px 22px;border-radius:10px" style-hover="background:#7FE0A8">Get a Free Quote</a>
+    </div>
+  </div>
+</nav>
+
+<section id="top" data-screen-label="Hero" style="position:relative;overflow:hidden;background:#0D1F13;padding:150px 24px 0">
+  <div style="position:absolute;top:-320px;left:-220px;width:950px;height:950px;background:radial-gradient(circle,rgba(47,191,113,0.08),transparent 62%);pointer-events:none"></div>
+  <img src="uploads/bloom-logo.png" alt="" style="position:absolute;right:-170px;top:-70px;width:720px;opacity:0.035;pointer-events:none">
+  <div style="position:relative;max-width:1180px;margin:0 auto;display:grid;grid-template-columns:1.05fr 0.95fr;gap:56px;align-items:center">
+    <div>
+      <div style="font-weight:600;font-size:13px;letter-spacing:0.14em;text-transform:uppercase;color:#7FE0A8;margin-bottom:20px">Web Design for Home Service Businesses — Prairieville, LA</div>
+      <h1 style="font-family:Syne,sans-serif;font-weight:800;font-size:60px;line-height:1.05;color:#F4F1EA;margin:0 0 22px">Get a website that <span style="color:#2FBF71">wins you the job</span> before the phone even rings.</h1>
+      <p style="font-size:19px;line-height:1.55;color:rgba(244,241,234,0.7);margin:0 0 32px;max-width:520px;text-wrap:pretty">Fully custom, built around your business, and live in as little as 2 weeks. When customers Google you, they'll find a company worth hiring.</p>
+      <div style="display:flex;gap:16px;align-items:center;margin-bottom:18px">
+        <a href="#contact" style="font-weight:600;font-size:17px;color:#0D1F13;background:#2FBF71;padding:16px 30px;border-radius:10px" style-hover="background:#7FE0A8">Get My Free Quote</a>
+        <a href="Portfolio.dc.html" style="font-weight:600;font-size:17px;color:#F4F1EA;border:1.5px solid rgba(244,241,234,0.6);padding:14.5px 28px;border-radius:10px" style-hover="color:#7FE0A8;border-color:#7FE0A8">See My Work →</a>
+      </div>
+      <div style="font-weight:500;font-size:13px;color:rgba(244,241,234,0.6)"><span style="color:#2FBF71">✓</span> Flat price quoted up front&nbsp;&nbsp;·&nbsp;&nbsp;<span style="color:#2FBF71">✓</span> Live in as little as 2 weeks&nbsp;&nbsp;·&nbsp;&nbsp;<span style="color:#2FBF71">✓</span> 24/7 support, direct from me</div>
+    </div>
+    <div>
+      
+    <img src="./90f751c1a_generated_image-mro9dpx1-2o4m.png" alt="Client website shown on a laptop" style="width: 556px; border-radius: 16px; box-shadow: 0 30px 70px rgba(0,0,0,0.45); display: block; height: 630px; object-fit: cover"></div>
+  </div>
+  <div style="position:relative;max-width:1180px;margin:56px auto 0;padding:26px 0;border-top:1px solid rgba(244,241,234,0.12);display:flex;align-items:center;gap:40px;flex-wrap:wrap">
+    <div style="display:flex;align-items:center;gap:14px">
+      <span style="color:#E8B84B;font-size:18px;letter-spacing:3px">★★★★★</span>
+      <span style="font-size:15px;color:rgba(244,241,234,0.7)">Rated 5.0 by every client to date</span>
+    </div>
+    <div style="width:1px;height:28px;background:rgba(244,241,234,0.12)"></div>
+    <div style="font-style:italic;font-size:15px;color:rgba(244,241,234,0.7)">"A website I'm proud to have my name on." <span style="font-style:normal;font-weight:600;color:#F4F1EA">— Mike K., Core Building</span></div>
+  </div>
+</section>
+
+<section data-screen-label="Ticker" style="background:#0A180F;padding:17px 0;overflow:hidden">
+  <div style="display:flex;width:max-content;animation:tickerMove 42s linear infinite">
+    <div style="display:flex;align-items:center;gap:30px;padding-right:30px;font-weight:500;font-size:15px;letter-spacing:0.1em;text-transform:uppercase;color:rgba(244,241,234,0.65);white-space:nowrap">
+      <span>Custom Web Design</span><span style="color:#2FBF71">•</span><span>Live in as Little as 2 Weeks</span><span style="color:#2FBF71">•</span><span>Built-in Local SEO</span><span style="color:#2FBF71">•</span><span>Mobile-First</span><span style="color:#2FBF71">•</span><span>24/7 Support</span><span style="color:#2FBF71">•</span><span>Hosting &amp; Launch Handled</span><span style="color:#2FBF71">•</span><span>You Own Everything</span><span style="color:#2FBF71">•</span>
+    </div>
+    <div style="display:flex;align-items:center;gap:30px;padding-right:30px;font-weight:500;font-size:15px;letter-spacing:0.1em;text-transform:uppercase;color:rgba(244,241,234,0.65);white-space:nowrap">
+      <span>Custom Web Design</span><span style="color:#2FBF71">•</span><span>Live in as Little as 2 Weeks</span><span style="color:#2FBF71">•</span><span>Built-in Local SEO</span><span style="color:#2FBF71">•</span><span>Mobile-First</span><span style="color:#2FBF71">•</span><span>24/7 Support</span><span style="color:#2FBF71">•</span><span>Hosting &amp; Launch Handled</span><span style="color:#2FBF71">•</span><span>You Own Everything</span><span style="color:#2FBF71">•</span>
+    </div>
+  </div>
+</section>
+
+
+
+<section data-screen-label="Recent Work" style="background-color:#EDE8DC;background-image:url(&quot;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48'%3E%3Cpath d='M48 0H0V48' fill='none' stroke='%230D1F13' stroke-opacity='0.07'/%3E%3C/svg%3E&quot;);border-top:1px solid rgba(13,31,19,0.1);border-bottom:1px solid rgba(13,31,19,0.1);padding:96px 24px">
+  <div style="max-width:1180px;margin:0 auto">
+    <div style="display:flex;align-items:flex-end;justify-content:space-between;gap:24px;flex-wrap:wrap;margin-bottom:48px">
+      <div style="max-width:640px">
+        <div style="font-weight:600;font-size:13px;letter-spacing:0.14em;text-transform:uppercase;color:#2FBF71;margin-bottom:16px">Recent Work</div>
+        <h2 style="font-family:Syne,sans-serif;font-weight:700;font-size:40px;line-height:1.12;color:#0D1F13;margin:0;text-wrap:pretty">Real websites, live for real businesses.</h2>
+      </div>
+      <a href="Portfolio.dc.html" style="font-weight:600;font-size:17px;color:#0D1F13;border:1.5px solid rgba(13,31,19,0.45);padding:12px 24px;border-radius:10px;white-space:nowrap" style-hover="color:#2FBF71;border-color:#2FBF71">See all work →</a>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:24px">
+      <a href="Portfolio.dc.html" style="display:flex;flex-direction:column;gap:0;background:#FFFFFF;border:1px solid rgba(13,31,19,0.1);border-radius:16px;overflow:hidden;box-shadow:0 10px 30px rgba(13,31,19,0.05);transition:transform 0.2s,border-color 0.2s" style-hover="transform:translateY(-4px);border-color:rgba(127,224,168,0.5)">
+        <div style="background:#EDE8DC;padding:14px 14px 0;height:220px;overflow:hidden">
+          <img src="uploads/greenfield-site.jpg" alt="Greenfield Construction website" style="width:100%;height:100%;object-fit:cover;object-position:top;border-radius:8px 8px 0 0;display:block">
+        </div>
+        <div style="padding:22px 24px 24px">
+          <div style="font-family:Syne,sans-serif;font-weight:700;font-size:19px;color:#0D1F13;margin-bottom:6px">Greenfield Construction</div>
+          <div style="font-size:14px;color:#41503F">Custom Home Construction — Louisiana</div>
+        </div>
+      </a>
+      <a href="Portfolio.dc.html" style="display:flex;flex-direction:column;gap:0;background:#FFFFFF;border:1px solid rgba(13,31,19,0.1);border-radius:16px;overflow:hidden;box-shadow:0 10px 30px rgba(13,31,19,0.05);transition:transform 0.2s,border-color 0.2s" style-hover="transform:translateY(-4px);border-color:rgba(127,224,168,0.5)">
+        <div style="background:#EDE8DC;padding:14px 14px 0;height:220px;overflow:hidden">
+          <img src="uploads/proclean-site.jpg" alt="ProClean Surface Works website" style="width:100%;height:100%;object-fit:cover;object-position:top;border-radius:8px 8px 0 0;display:block">
+        </div>
+        <div style="padding:22px 24px 24px">
+          <div style="font-family:Syne,sans-serif;font-weight:700;font-size:19px;color:#0D1F13;margin-bottom:6px">ProClean Surface Works</div>
+          <div style="font-size:14px;color:#41503F">Exterior Cleaning — Baton Rouge, LA</div>
+        </div>
+      </a>
+      <a href="Portfolio.dc.html" style="display:flex;flex-direction:column;gap:0;background:#FFFFFF;border:1px solid rgba(13,31,19,0.1);border-radius:16px;overflow:hidden;box-shadow:0 10px 30px rgba(13,31,19,0.05);transition:transform 0.2s,border-color 0.2s" style-hover="transform:translateY(-4px);border-color:rgba(127,224,168,0.5)">
+        <div style="background:#EDE8DC;padding:14px 14px 0;height:220px;overflow:hidden">
+          <img src="uploads/friendsoftheeagles-site.jpg" alt="Friends of the Eagles website" style="width:100%;height:100%;object-fit:cover;object-position:top;border-radius:8px 8px 0 0;display:block">
+        </div>
+        <div style="padding:22px 24px 24px">
+          <div style="font-family:Syne,sans-serif;font-weight:700;font-size:19px;color:#0D1F13;margin-bottom:6px">Friends of the Eagles</div>
+          <div style="font-size:14px;color:#41503F">Nonprofit / Community — Louisiana</div>
+        </div>
+      </a>
+    </div>
+    <div style="text-align:center;margin-top:36px;font-size:15px;color:#41503F">Live builds and demos, straight from the portfolio — <a href="Portfolio.dc.html">see the full portfolio →</a></div>
+  </div>
+</section><section id="work" data-screen-label="Social Proof" style="background:#0D1F13;padding:96px 24px">
+  <div style="max-width:1180px;margin:0 auto">
+    <div style="text-align:center;max-width:820px;margin:0 auto 56px">
+      <div style="font-weight:600;font-size:13px;letter-spacing:0.14em;text-transform:uppercase;color:#7FE0A8;margin-bottom:16px">Client Results</div>
+      <h2 style="font-family:Syne,sans-serif;font-weight:700;font-size:40px;line-height:1.12;color:#F4F1EA;margin:0;text-wrap:pretty">Join the businesses that finally look as good online as they do on the job.</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:32px">
+      <div style="background:#12291A;border:1px solid rgba(244,241,234,0.12);border-radius:16px;padding:36px;display:flex;flex-direction:column;gap:16px">
+        <span style="color:#E8B84B;font-size:17px;letter-spacing:3px">★★★★★</span>
+        <h3 style="font-family:Syne,sans-serif;font-weight:700;font-size:22px;line-height:1.25;color:#F4F1EA;margin:0">"A website I'm proud to have my name on."</h3>
+        <p style="font-style:italic;font-size:17px;line-height:1.6;color:rgba(244,241,234,0.75);margin:0">"We entrusted Reid to build our website and we sure are glad we did. His creative mind and writing brought my website to life."</p>
+        <div style="font-weight:600;font-size:15px;color:#F4F1EA">Mike K. <span style="font-weight:400;color:rgba(244,241,234,0.6)">· Core Building</span></div>
+      </div>
+      <div style="background:#12291A;border:1px solid rgba(244,241,234,0.12);border-radius:16px;padding:36px;display:flex;flex-direction:column;gap:16px">
+        <span style="color:#E8B84B;font-size:17px;letter-spacing:3px">★★★★★</span>
+        <h3 style="font-family:Syne,sans-serif;font-weight:700;font-size:22px;line-height:1.25;color:#F4F1EA;margin:0">"Clean and professional without feeling stiff."</h3>
+        <p style="font-style:italic;font-size:17px;line-height:1.6;color:rgba(244,241,234,0.75);margin:0">"Reid got what I was going for. The whole process was super easy, and I'm seriously happy with how it turned out."</p>
+        <div style="font-weight:600;font-size:15px;color:#F4F1EA">Patrick S. <span style="font-weight:400;color:rgba(244,241,234,0.6)">· PScott Productions</span></div>
+      </div>
+    </div>
+  </div>
+</section><section data-screen-label="Pain — Before/After" style="background-color:#EDE8DC;background-image:url(&quot;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48'%3E%3Cpath d='M48 0H0V48' fill='none' stroke='%230D1F13' stroke-opacity='0.07'/%3E%3C/svg%3E&quot;);border-top:1px solid rgba(13,31,19,0.1);border-bottom:1px solid rgba(13,31,19,0.1);padding:96px 24px">
+  <div style="max-width:1180px;margin:0 auto">
+    <div style="text-align:center;max-width:760px;margin:0 auto 56px">
+      <div style="font-weight:600;font-size:13px;letter-spacing:0.14em;text-transform:uppercase;color:#2FBF71;margin-bottom:16px">Sound Familiar?</div>
+      <h2 style="font-family:Syne,sans-serif;font-weight:700;font-size:40px;line-height:1.12;color:#0D1F13;margin:0;text-wrap:pretty">Customers are checking you out online right now. What are they finding?</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:stretch">
+      <div style="background:#EDE8DC;border:1px solid rgba(13,31,19,0.1);border-radius:16px;padding:28px;display:flex;flex-direction:column;gap:22px">
+        <div style="font-weight:600;font-size:13px;letter-spacing:0.14em;text-transform:uppercase;color:#41503F">Before</div>
+        <img src="uploads/4e995f0e2_generated_05e57a4b.png" alt="Outdated website" style="width:100%;border-radius:10px;filter:grayscale(1) contrast(0.92);opacity:0.85;display:block;border:1px solid rgba(13,31,19,0.1)">
+        <div style="display:flex;flex-direction:column;gap:12px;font-size:16px;line-height:1.6;color:#41503F">
+          <div style="display:flex;gap:10px"><span style="color:rgba(13,31,19,0.4);font-weight:600">✕</span><span>Outdated — and it shows</span></div>
+          <div style="display:flex;gap:10px"><span style="color:rgba(13,31,19,0.4);font-weight:600">✕</span><span>Broken on phones</span></div>
+          <div style="display:flex;gap:10px"><span style="color:rgba(13,31,19,0.4);font-weight:600">✕</span><span>No reviews, no photos, no reason to trust you</span></div>
+          <div style="display:flex;gap:10px"><span style="color:rgba(13,31,19,0.4);font-weight:600">✕</span><span>They hit back and call the next company</span></div>
+        </div>
+      </div>
+      <div style="background:#FFFFFF;border:2px solid #2FBF71;border-radius:16px;padding:28px;display:flex;flex-direction:column;gap:22px;box-shadow:0 24px 60px rgba(47,191,113,0.16)">
+        <div style="font-weight:600;font-size:13px;letter-spacing:0.14em;text-transform:uppercase;color:#2FBF71">After</div>
+        <img src="uploads/after-example.jpg" alt="Modern professional website" style="width:100%;border-radius:10px;display:block;border:1px solid rgba(13,31,19,0.08)">
+        <div style="display:flex;flex-direction:column;gap:12px;font-size:16px;line-height:1.6;color:#41503F">
+          <div style="display:flex;gap:10px"><span style="color:#2FBF71;font-weight:600">✓</span><span>Looks like the most professional company in town</span></div>
+          <div style="display:flex;gap:10px"><span style="color:#2FBF71;font-weight:600">✓</span><span>Works perfectly on every phone</span></div>
+          <div style="display:flex;gap:10px"><span style="color:#2FBF71;font-weight:600">✓</span><span>Your reviews and your work, front and center</span></div>
+          <div style="display:flex;gap:10px"><span style="color:#2FBF71;font-weight:600">✓</span><span>They fill out the form instead of leaving</span></div>
+        </div>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:56px">
+      <p style="font-size:19px;line-height:1.55;color:#41503F;margin:0 0 14px;text-wrap:pretty">You already do great work. Your website should prove it before they call someone else.</p>
+      <a href="#contact" style="font-weight:600;font-size:17px">Show me what my site could look like →</a>
+    </div>
+  </div>
+</section>
+
+
+
+<section id="services" data-screen-label="Value Props" style="background:#0D1F13;padding:96px 24px">
+  <div style="max-width:1180px;margin:0 auto">
+    <div style="max-width:640px;margin-bottom:56px">
+      <div style="font-weight:600;font-size:13px;letter-spacing:0.14em;text-transform:uppercase;color:#7FE0A8;margin-bottom:16px">What You Get</div>
+      <h2 style="font-family:Syne,sans-serif;font-weight:700;font-size:40px;line-height:1.12;color:#F4F1EA;margin:0;text-wrap:pretty">You run your business. Your website runs itself.</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px">
+      <div style="background:#FFFFFF;border:1px solid rgba(13,31,19,0.1);border-radius:20px;padding:38px;box-shadow:0 10px 30px rgba(13,31,19,0.05);transition:transform 0.2s,border-color 0.2s" style-hover="transform:translateY(-3px);border-color:rgba(13,31,19,0.25)">
+        <div style="font-family:Syne,sans-serif;font-weight:800;font-size:56px;line-height:1;color:rgba(47,191,113,0.3);margin-bottom:18px">01</div>
+        <h3 style="font-family:Syne,sans-serif;font-weight:700;font-size:23px;line-height:1.25;color:#0D1F13;margin:0 0 12px;text-wrap:pretty">Show up when your area searches for what you do.</h3>
+        <p style="font-size:16px;line-height:1.6;color:#41503F;margin:0">Local SEO built in from day one — so Google sends you customers who are already looking.</p>
+      </div>
+      <div style="background:#FFFFFF;border:2px solid #2FBF71;border-radius:20px;padding:37px;box-shadow:0 14px 36px rgba(47,191,113,0.14);transition:transform 0.2s" style-hover="transform:translateY(-3px)">
+        <div style="font-family:Syne,sans-serif;font-weight:800;font-size:56px;line-height:1;color:#2FBF71;margin-bottom:18px">02</div>
+        <h3 style="font-family:Syne,sans-serif;font-weight:700;font-size:23px;line-height:1.25;color:#0D1F13;margin:0 0 12px;text-wrap:pretty">You don't lift a finger. I build everything.</h3>
+        <p style="font-size:16px;line-height:1.6;color:#41503F;margin:0">Design, domain, hosting, launch — all handled for you, live in as fast as 2 weeks.</p>
+      </div>
+      <div style="background:#FFFFFF;border:1px solid rgba(13,31,19,0.1);border-radius:20px;padding:38px;box-shadow:0 10px 30px rgba(13,31,19,0.05);transition:transform 0.2s,border-color 0.2s" style-hover="transform:translateY(-3px);border-color:rgba(13,31,19,0.25)">
+        <div style="font-family:Syne,sans-serif;font-weight:800;font-size:56px;line-height:1;color:rgba(47,191,113,0.3);margin-bottom:18px">03</div>
+        <h3 style="font-family:Syne,sans-serif;font-weight:700;font-size:23px;line-height:1.25;color:#0D1F13;margin:0 0 12px;text-wrap:pretty">Need something changed? Text me — day or night.</h3>
+        <p style="font-size:16px;line-height:1.6;color:#41503F;margin:0">Direct 24/7 support and maintenance from me, long after launch. No tickets, no waiting.</p>
+      </div>
+      <div style="background:#FFFFFF;border:1px solid rgba(13,31,19,0.1);border-radius:20px;padding:38px;box-shadow:0 10px 30px rgba(13,31,19,0.05);transition:transform 0.2s,border-color 0.2s" style-hover="transform:translateY(-3px);border-color:rgba(13,31,19,0.25)">
+        <div style="font-family:Syne,sans-serif;font-weight:800;font-size:56px;line-height:1;color:rgba(47,191,113,0.3);margin-bottom:18px">04</div>
+        <h3 style="font-family:Syne,sans-serif;font-weight:700;font-size:23px;line-height:1.25;color:#0D1F13;margin:0 0 12px;text-wrap:pretty">Your website stays as current as your company.</h3>
+        <p style="font-size:16px;line-height:1.6;color:#41503F;margin:0">New services, new photos, new reviews — added as your business grows, so your site never falls behind it.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section data-screen-label="Process" style="background-color:#EDE8DC;background-image:url(&quot;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48'%3E%3Cpath d='M48 0H0V48' fill='none' stroke='%230D1F13' stroke-opacity='0.07'/%3E%3C/svg%3E&quot;);border-top:1px solid rgba(13,31,19,0.1);border-bottom:1px solid rgba(13,31,19,0.1);padding:96px 24px">
+  <div style="max-width:1180px;margin:0 auto">
+    <div style="text-align:center;max-width:760px;margin:0 auto 56px">
+      <div style="font-weight:600;font-size:13px;letter-spacing:0.14em;text-transform:uppercase;color:#2FBF71;margin-bottom:16px">How It Works</div>
+      <h2 style="font-family:Syne,sans-serif;font-weight:700;font-size:40px;line-height:1.12;color:#0D1F13;margin:0;text-wrap:pretty">From first message to live website in four steps.</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:24px">
+      <div style="background:#0D1F13;border-radius:16px;padding:30px 26px;display:flex;flex-direction:column;gap:12px">
+        <div style="font-family:Syne,sans-serif;font-weight:800;font-size:56px;color:rgba(47,191,113,0.3);line-height:1">01</div>
+        <h3 style="font-family:Syne,sans-serif;font-weight:700;font-size:20px;line-height:1.25;color:#F4F1EA;margin:0">Tell Me About Your Business</h3>
+        <p style="font-size:15px;line-height:1.6;color:rgba(244,241,234,0.7);margin:0">A real conversation about what you do and what you want customers to feel when they find you. Free, no pressure.</p>
+      </div>
+      <div style="background:#0D1F13;border-radius:16px;padding:30px 26px;display:flex;flex-direction:column;gap:12px">
+        <div style="font-family:Syne,sans-serif;font-weight:800;font-size:56px;color:rgba(47,191,113,0.3);line-height:1">02</div>
+        <h3 style="font-family:Syne,sans-serif;font-weight:700;font-size:20px;line-height:1.25;color:#F4F1EA;margin:0">Lock It In</h3>
+        <p style="font-size:15px;line-height:1.6;color:rgba(244,241,234,0.7);margin:0">You get one flat price — no hourly meters, no surprise invoices. A deposit locks your spot and design starts immediately.</p>
+      </div>
+      <div style="background:#0D1F13;border-radius:16px;padding:30px 26px;display:flex;flex-direction:column;gap:12px">
+        <div style="font-family:Syne,sans-serif;font-weight:800;font-size:56px;color:rgba(47,191,113,0.3);line-height:1">03</div>
+        <h3 style="font-family:Syne,sans-serif;font-weight:700;font-size:20px;line-height:1.25;color:#F4F1EA;margin:0">Design &amp; Build</h3>
+        <p style="font-size:15px;line-height:1.6;color:rgba(244,241,234,0.7);margin:0">I design your site around your brand and goals, you give feedback, we refine it together, and it gets built on WordPress — mobile-ready and optimized from day one. As quick as 2 weeks.</p>
+      </div>
+      <div style="background:#0D1F13;border-radius:16px;padding:30px 26px;display:flex;flex-direction:column;gap:12px">
+        <div style="font-family:Syne,sans-serif;font-weight:800;font-size:56px;color:rgba(47,191,113,0.3);line-height:1">04</div>
+        <h3 style="font-family:Syne,sans-serif;font-weight:700;font-size:20px;line-height:1.25;color:#F4F1EA;margin:0">Launch (and I Don't Disappear)</h3>
+        <p style="font-size:15px;line-height:1.6;color:rgba(244,241,234,0.7);margin:0">Hosting set up, site live, and a walkthrough so you can run it yourself. After that you've got 24/7 support and a site that stays current as your company grows.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<sc-if value="{{ showAbout }}" hint-placeholder-val="{{ true }}">
+<section data-screen-label="About" style="background:#0D1F13;padding:96px 24px">
+  <div style="max-width:1180px;margin:0 auto;display:grid;grid-template-columns:1.1fr 0.9fr;gap:64px;align-items:start">
+    <div style="display:flex;flex-direction:column;gap:36px">
+      <div>
+        <div style="font-weight:600;font-size:13px;letter-spacing:0.14em;text-transform:uppercase;color:#7FE0A8;margin-bottom:16px">Who's Behind It</div>
+        <h2 style="font-family:Syne,sans-serif;font-weight:700;font-size:40px;line-height:1.12;color:#F4F1EA;margin:0 0 20px">Built from scratch. <span style="color:#2FBF71">Just like your site.</span></h2>
+        <p style="font-size:16px;line-height:1.6;color:rgba(244,241,234,0.7);margin:0 0 16px;text-wrap:pretty">I got into web design out of necessity — I started a clothing brand and built the site myself. Trial and error, late nights, learning as I went. Friends started asking me to build theirs, and I kept saying yes. That's why Bloom Studios exists: so businesses like yours get online with something you're actually proud of.</p>
+        <p style="font-size:16px;line-height:1.6;color:rgba(244,241,234,0.7);margin:0;text-wrap:pretty">This is a one-man mission. No agency, no account managers, no handoffs — it's just me, start to finish.</p>
+      </div>
+      <div style="background:#12291A;border:1px solid rgba(244,241,234,0.12);border-radius:16px;padding:28px 32px">
+        <p style="font-style:italic;font-size:17px;line-height:1.6;color:rgba(244,241,234,0.75);margin:0 0 12px">"A strong website builds a strong company. You work directly with me, start to finish — never handed off."</p>
+        <div style="font-weight:600;font-size:13px;letter-spacing:0.12em;text-transform:uppercase;color:#2FBF71">That's the Bloom Studios promise.</div>
+      </div><div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:0">
+        <div style="padding:0 24px 0 0">
+          <div style="font-weight:600;font-size:16px;color:#F4F1EA;margin-bottom:8px">One Person, Start to Finish</div>
+          <p style="font-size:14px;line-height:1.55;color:rgba(244,241,234,0.65);margin:0">I design it, build it, and launch it. Never handed off.</p>
+        </div>
+        <div style="padding:0 24px;border-left:1px solid rgba(244,241,234,0.12)">
+          <div style="font-weight:600;font-size:16px;color:#F4F1EA;margin-bottom:8px">A Direct Line, 24/7</div>
+          <p style="font-size:14px;line-height:1.55;color:rgba(244,241,234,0.65);margin:0">Call, text, or email — you're talking to me, not a ticket queue.</p>
+        </div>
+        <div style="padding:0 0 0 24px;border-left:1px solid rgba(244,241,234,0.12)">
+          <div style="font-weight:600;font-size:16px;color:#F4F1EA;margin-bottom:8px">Local &amp; Proud</div>
+          <p style="font-size:14px;line-height:1.55;color:rgba(244,241,234,0.65);margin:0">Based in Prairieville, building for Louisiana businesses.</p>
+        </div>
+      </div>
+      
+    </div>
+    <div>
+      <div style="position:relative">
+        
+        <div style="position:absolute;left:16px;right:16px;bottom:16px;background:rgba(13,31,19,0.75);backdrop-filter:blur(8px);border:1px solid rgba(244,241,234,0.15);border-radius:12px;padding:16px 20px">
+          <div style="font-family:Syne,sans-serif;font-weight:700;font-size:22px;color:#F4F1EA">Reid Scott</div>
+          <div style="font-weight:600;font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:#7FE0A8">Founder, Bloom Studios</div>
+        </div>
+      <img src="uploads/reid-scott.jpg" alt="Reid Scott, founder of Bloom Studios" style="width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center 35%;border-radius:16px;display:block"></div>
+      <div style="display:flex;flex-direction:column">
+        <div style="display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:16px 4px;border-bottom:1px solid rgba(244,241,234,0.12)">
+          <div style="font-size:14px;color:rgba(244,241,234,0.55)">Phone</div>
+          <a href="tel:2253635220" style="font-weight:500;font-size:16px;color:#F4F1EA" style-hover="color:#7FE0A8">225-363-5220</a>
+        </div>
+        <div style="display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:16px 4px;border-bottom:1px solid rgba(244,241,234,0.12)">
+          <div style="font-size:14px;color:rgba(244,241,234,0.55)">Email</div>
+          <a href="mailto:reid@bloomstudios.com" style="font-weight:500;font-size:16px;color:#F4F1EA" style-hover="color:#7FE0A8">reid@bloomstudios.com</a>
+        </div>
+        <div style="display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:16px 4px;border-bottom:1px solid rgba(244,241,234,0.12)">
+          <div style="font-size:14px;color:rgba(244,241,234,0.55)">Location</div>
+          <div style="font-weight:500;font-size:16px;color:#F4F1EA">Prairieville, Louisiana</div>
+        </div>
+        <a href="#contact" style="font-weight:600;font-size:16px;color:#0D1F13;background:#2FBF71;padding:14px 24px;border-radius:10px;text-align:center;margin-top:20px" style-hover="background:#7FE0A8">Work With Me</a>
+      </div>
+    </div>
+  </div>
+</section>
+</sc-if>
+
+<section data-screen-label="Guarantee + FAQ" style="background-color:#F4F1EA;background-image:url(&quot;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url%28%23n%29' opacity='0.03'/%3E%3C/svg%3E&quot;);padding:96px 24px">
+  <div style="max-width:1180px;margin:0 auto">
+    <div style="text-align:center;max-width:760px;margin:0 auto 48px">
+      <div style="font-weight:600;font-size:13px;letter-spacing:0.14em;text-transform:uppercase;color:#2FBF71;margin-bottom:16px">No Surprises</div>
+      <h2 style="font-family:Syne,sans-serif;font-weight:700;font-size:40px;line-height:1.12;color:#0D1F13;margin:0">The only thing you risk is staying invisible.</h2>
+    </div>
+    <div style="background:#FFFFFF;border:2px solid #2FBF71;border-radius:16px;padding:40px;max-width:700px;margin:0 auto 64px;text-align:center;box-shadow:0 20px 50px rgba(47,191,113,0.12)">
+      <h3 style="font-family:Syne,sans-serif;font-weight:700;font-size:22px;color:#0D1F13;margin:0 0 14px">The No-Surprises Promise</h3>
+      <p style="font-size:16px;line-height:1.6;color:#41503F;margin:0;text-wrap:pretty">One flat price, quoted before anything starts. You refine the design with me until it's right — {{ revisionRounds }} revision rounds included. You own your domain, your hosting, and your site, 100%. And you get 24/7 support from me after launch, not a ticket queue.</p>
+    </div>
+    <div style="max-width:760px;margin:0 auto;display:flex;flex-direction:column">
+      <details style="border-top:1px solid rgba(13,31,19,0.1)">
+        <summary style="font-family:Syne,sans-serif;font-weight:700;font-size:20px;color:#0D1F13;padding:22px 0;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px">How much does a website cost?<span style="color:#2FBF71;font-size:24px;font-family:Inter,sans-serif;font-weight:400">+</span></summary>
+        <p style="font-size:16px;line-height:1.6;color:#41503F;margin:0;padding:0 0 22px">Most projects land between {{ priceRange }}. You get one flat quote up front — a deposit starts the project, the balance is due at launch.</p>
+      </details>
+      <details style="border-top:1px solid rgba(13,31,19,0.1)">
+        <summary style="font-family:Syne,sans-serif;font-weight:700;font-size:20px;color:#0D1F13;padding:22px 0;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px">How long does it take?<span style="color:#2FBF71;font-size:24px;font-family:Inter,sans-serif;font-weight:400">+</span></summary>
+        <p style="font-size:16px;line-height:1.6;color:#41503F;margin:0;padding:0 0 22px">As quick as 2 weeks, depending on the size of the site. You'll get a timeline up front.</p>
+      </details>
+      <details style="border-top:1px solid rgba(13,31,19,0.1)">
+        <summary style="font-family:Syne,sans-serif;font-weight:700;font-size:20px;color:#0D1F13;padding:22px 0;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px">I already have a website. Can you redesign it?<span style="color:#2FBF71;font-size:24px;font-family:Inter,sans-serif;font-weight:400">+</span></summary>
+        <p style="font-size:16px;line-height:1.6;color:#41503F;margin:0;padding:0 0 22px">Yes — we keep what's working, fix what isn't, and nothing goes offline during the switch.</p>
+      </details>
+      <details style="border-top:1px solid rgba(13,31,19,0.1)">
+        <summary style="font-family:Syne,sans-serif;font-weight:700;font-size:20px;color:#0D1F13;padding:22px 0;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px">Can I update it myself?<span style="color:#2FBF71;font-size:24px;font-family:Inter,sans-serif;font-weight:400">+</span></summary>
+        <p style="font-size:16px;line-height:1.6;color:#41503F;margin:0;padding:0 0 22px">Yes. It's WordPress, and I'll walk you through it at launch. And if you'd rather not touch it, maintenance keeps it current for you.</p>
+      </details>
+      <details style="border-top:1px solid rgba(13,31,19,0.1)">
+        <summary style="font-family:Syne,sans-serif;font-weight:700;font-size:20px;color:#0D1F13;padding:22px 0;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px">What happens after launch?<span style="color:#2FBF71;font-size:24px;font-family:Inter,sans-serif;font-weight:400">+</span></summary>
+        <p style="font-size:16px;line-height:1.6;color:#41503F;margin:0;padding:0 0 22px">You get 24/7 support directly from me. Something breaks, you need a change, your business adds a service — text me and it's handled.</p>
+      </details>
+      <details style="border-top:1px solid rgba(13,31,19,0.1);border-bottom:1px solid rgba(13,31,19,0.1)">
+        <summary style="font-family:Syne,sans-serif;font-weight:700;font-size:20px;color:#0D1F13;padding:22px 0;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px">Do I own my website?<span style="color:#2FBF71;font-size:24px;font-family:Inter,sans-serif;font-weight:400">+</span></summary>
+        <p style="font-size:16px;line-height:1.6;color:#41503F;margin:0;padding:0 0 22px">100%. Your domain, your hosting, your site.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section id="contact" data-screen-label="Final CTA" style="position:relative;overflow:hidden;background:#0D1F13;padding:96px 24px">
+  <div style="position:absolute;top:-200px;right:-260px;width:900px;height:900px;background:radial-gradient(circle,rgba(47,191,113,0.08),transparent 62%);pointer-events:none"></div>
+  <img src="uploads/bloom-logo.png" alt="" style="position:absolute;left:-190px;bottom:-160px;width:700px;opacity:0.035;pointer-events:none">
+  <div style="position:relative;max-width:1180px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start">
+    <div>
+      <h2 style="font-family:Syne,sans-serif;font-weight:700;font-size:40px;line-height:1.12;color:#F4F1EA;margin:0 0 18px;text-wrap:pretty">Your next customer is searching right now. Make sure they find you.</h2>
+      <p style="font-size:19px;line-height:1.55;color:rgba(244,241,234,0.7);margin:0 0 32px;text-wrap:pretty">Book a time that works for you. No pressure, no pitch — just a straight answer about what your business needs and what it costs.</p>
+      <div style="display:flex;flex-direction:column;gap:12px;font-size:16px;color:rgba(244,241,234,0.7)">
+        <div>Email · <a href="tel:2253635220" style="color:#7FE0A8">Cell: 225-363-5220</a></div>
+        <div>📍 Prairieville, Louisiana</div>
+        <div style="font-style:italic;font-size:15px;color:rgba(244,241,234,0.55)">Prefer to call or text? Do that instead.</div>
+      </div>
+    </div>
+    <div style="background:#FFFFFF;border:1px solid rgba(244,241,234,0.12);border-radius:16px;padding:12px;overflow:hidden">
+      <div style="display:flex;align-items:center;justify-content:center;gap:10px;background:#F4F1EA;border:1px solid rgba(13,31,19,0.08);border-radius:8px;padding:10px 16px;margin-bottom:10px">
+        <span style="width:9px;height:9px;border-radius:50%;background:#2FBF71;box-shadow:0 0 0 3px rgba(47,191,113,0.25);flex-shrink:0"></span>
+        <span style="font-weight:500;font-size:13px;color:#41503F">Booking up fast — <strong style="color:#0D1F13">{{ bookedThisMonth }} calls booked this month</strong> · only {{ spotsLeft }} spots left this week</span>
+      </div>
+      <div style="height:930px;overflow:hidden;border-radius:8px">
+        <iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0GgSpogzVd3VTHgTlF5pDr_8JQs5ohjlcH9y0qno-2dOy-q93q-DtjCwZ59hYfbyQn_9Ikch7j?gv=true" title="Book a meeting with Reid" style="border:0;display:block" width="100%" height="1050"></iframe>
+      </div>
+      <div style="font-weight:500;font-size:13px;color:#41503F;text-align:center;padding:10px 0 6px"><span style="color:#2FBF71">✓</span> Flat price quoted up front · <span style="color:#2FBF71">✓</span> Free, no pressure · <span style="color:#2FBF71">✓</span> You talk to Reid, not a sales rep</div>
+    </div>
+  </div>
+</section>
+
+<footer data-screen-label="Footer" style="background:#0A180F;padding:48px 24px">
+  <div style="max-width:1180px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap">
+    <a href="#top" style="display:flex;align-items:center;gap:10px">
+      <img src="uploads/bloom-logo.png" alt="Bloom Studios" style="height:32px;width:auto">
+      <span style="font-family:Syne,sans-serif;font-weight:800;font-size:17px;color:#F4F1EA">Bloom Studios</span>
+    </a>
+    <div style="display:flex;gap:28px;font-size:14px">
+      <a href="#top" style="color:rgba(244,241,234,0.55)" style-hover="color:#7FE0A8">Home</a>
+      <a href="Portfolio.dc.html" style="color:rgba(244,241,234,0.55)" style-hover="color:#7FE0A8">Work</a>
+      <a href="#services" style="color:rgba(244,241,234,0.55)" style-hover="color:#7FE0A8">Services</a>
+      <a href="#contact" style="color:rgba(244,241,234,0.55)" style-hover="color:#7FE0A8">Contact</a>
+    </div>
+    <div style="font-size:14px;color:rgba(244,241,234,0.55)">225-363-5220 · Prairieville, LA</div>
+  </div>
+  <div style="max-width:1180px;margin:24px auto 0;padding-top:20px;border-top:1px solid rgba(244,241,234,0.08);font-size:14px;color:rgba(244,241,234,0.4)">© 2026 Bloom Studios by Reid Scott.</div>
+</footer>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;replyWindow&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;a few hours&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Fill your real numbers&quot;},&quot;priceRange&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;$1000 and $5000&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Fill your real numbers&quot;},&quot;revisionRounds&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;No Limit&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Fill your real numbers&quot;},&quot;bookedThisMonth&quot;:{&quot;editor&quot;:&quot;int&quot;,&quot;default&quot;:12,&quot;tsType&quot;:&quot;number&quot;,&quot;min&quot;:0,&quot;section&quot;:&quot;Booking activity&quot;},&quot;spotsLeft&quot;:{&quot;editor&quot;:&quot;int&quot;,&quot;default&quot;:3,&quot;tsType&quot;:&quot;number&quot;,&quot;min&quot;:0,&quot;section&quot;:&quot;Booking activity&quot;},&quot;showAbout&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:false,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Sections&quot;}}">
+class Component extends DCLogic {
+  state = { scrolled: false, submitted: false };
+  componentDidMount() {
+    this._onScroll = () => {
+      const s = window.scrollY > 40;
+      if (s !== this.state.scrolled) this.setState({ scrolled: s });
+    };
+    window.addEventListener('scroll', this._onScroll, { passive: true });
+  }
+  componentWillUnmount() { window.removeEventListener('scroll', this._onScroll); }
+  renderVals() {
+    return {
+      navBg: this.state.scrolled ? '#0D1F13' : 'transparent',
+      navBorder: this.state.scrolled ? '1px solid rgba(244,241,234,0.12)' : '1px solid transparent',
+      replyWindow: this.props.replyWindow ?? 'a few hours',
+      bookedThisMonth: this.props.bookedThisMonth ?? 12,
+      spotsLeft: this.props.spotsLeft ?? 3,
+      priceRange: this.props.priceRange ?? '$X and $X',
+      revisionRounds: this.props.revisionRounds ?? '[X]',
+      showAbout: this.props.showAbout ?? true,
+    };
+  }
+}
+</script>
+</body>
+</html>
