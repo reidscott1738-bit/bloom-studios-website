@@ -31,7 +31,12 @@
       "Bash(cp \"project/uploads/www.corebuilding.org_ \\(2\\).png\" \"images/portfolio-core.png\")",
       "Bash(git -c core.quotepath=false commit -q -m 'Build Portfolio page + booking-optimize the site *)",
       "Bash(grep -viE 'node_modules|/\\\\.git/|/images/portfolio|OneDrive/WEBSITE')",
-      "Bash([ -f \"$OUT\" ])"
+      "Bash([ -f \"$OUT\" ])",
+      "Bash(find 'C:/Users/reids/OneDrive/WEBSITE WORK/Websites/FLOWER BLOOM STUDIO/claude design sites/connect to github' -iname *pscott*)",
+      "Bash(find 'C:/Users/reids/OneDrive/WEBSITE WORK/Websites/FLOWER BLOOM STUDIO/claude design sites/connect to github' -type f '\\(' -iname *.png -o -iname *.jpg -o -iname *.jpeg '\\)' -mmin -15)",
+      "Bash(python -c \"print\\(open\\('images/portfolio-pscott.png','rb'\\).read\\(8\\)\\)\")",
+      "Bash(cp C:/Users/reids/Downloads/portfolio-pscott.png.png 'C:/Users/reids/OneDrive/WEBSITE WORK/Websites/FLOWER BLOOM STUDIO/claude design sites/connect to github/images/portfolio-pscott.png')",
+      "Bash(python -c \"print\\('PNG header OK' if open\\('images/portfolio-pscott.png','rb'\\).read\\(8\\)==b'\\\\x89PNG\\\\r\\\\n\\\\x1a\\\\n' else 'NOT A PNG'\\)\")"
     ]
   }
 }
