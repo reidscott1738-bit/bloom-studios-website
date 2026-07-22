@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact | Flower Bloom Studios</title>
+<meta name="description" content="Get in touch with Flower Bloom Studios. Email Reid about your website project. No pressure, fast replies. Prairieville, Louisiana.">
+<link rel="icon" href="images/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Inter:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg-dark:#0D1F13; --bg-darker:#0A180F; --panel:#12291A;
+    --green:#2FBF71; --green-light:#7FE0A8; --gold:#E8B84B;
+    --cream:#F4F1EA; --sand:#EDE8DC; --ink:#0D1F13; --ink-muted:#41503F;
+    --maxw:1180px;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:Inter,system-ui,sans-serif;background:var(--bg-dark);color:var(--cream);-webkit-font-smoothing:antialiased}
+  img{max-width:100%}
+  a{color:var(--green);text-decoration:none}
+  a:hover{color:var(--green-light)}
+  ::selection{background:var(--green);color:var(--bg-dark)}
+  .container{max-width:var(--maxw);margin:0 auto;padding-left:24px;padding-right:24px}
+  .h1{font-family:Syne,sans-serif;font-weight:800;font-size:clamp(32px,5.6vw,50px);line-height:1.05;color:var(--cream)}
+  .eyebrow{font-weight:600;font-size:13px;letter-spacing:0.14em;text-transform:uppercase;margin-bottom:16px;color:var(--green-light)}
+  .btn{display:inline-block;font-weight:600;border-radius:10px;text-align:center;transition:background .2s,color .2s;line-height:1.2}
+  .btn-primary{background:var(--green);color:var(--bg-dark);padding:15px 28px;font-size:17px;border:0;cursor:pointer;font-family:inherit}
+  .btn-primary:hover{background:var(--green-light);color:var(--bg-dark)}
+
+  /* ============ Nav (always solid) ============ */
+  .nav{position:fixed;top:0;left:0;right:0;z-index:100;background:var(--bg-dark);border-bottom:1px solid rgba(244,241,234,0.12)}
+  .nav-inner{max-width:var(--maxw);margin:0 auto;padding:14px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+  .nav-logo{display:flex;align-items:center;gap:10px}
+  .nav-logo img{height:36px;width:auto}
+  .nav-logo span{font-family:Syne,sans-serif;font-weight:800;font-size:18px;color:var(--cream);letter-spacing:0.01em}
+  .nav-links{display:flex;align-items:center;gap:30px}
+  .nav-links a{font-weight:500;font-size:16px;color:var(--cream)}
+  .nav-links a:not(.btn):hover{color:var(--green-light)}
+  .nav-links a.active{color:var(--green-light);border-bottom:2px solid var(--green);padding-bottom:2px}
+  .nav-links .btn-quote{font-weight:600;color:var(--bg-dark);background:var(--green);padding:10px 20px;border-radius:10px}
+  .nav-links .btn-quote:hover{background:var(--green-light);color:var(--bg-dark)}
+  .nav-toggle{display:none;flex-direction:column;justify-content:center;gap:5px;width:44px;height:44px;background:none;border:0;cursor:pointer;padding:8px}
+  .nav-toggle span{display:block;height:2px;width:100%;background:var(--cream);border-radius:2px;transition:transform .3s,opacity .3s}
+  .nav-toggle.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+  .nav-toggle.open span:nth-child(2){opacity:0}
+  .nav-toggle.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+
+  /* ============ Contact ============ */
+  .contact{position:relative;overflow:hidden;background:var(--bg-dark);padding:clamp(120px,18vw,150px) 0 clamp(64px,10vw,96px)}
+  .contact .glow{position:absolute;top:-260px;right:-240px;width:900px;height:900px;max-width:150vw;background:radial-gradient(circle,rgba(47,191,113,0.09),transparent 62%);pointer-events:none}
+  .contact .watermark{position:absolute;left:-190px;bottom:-150px;width:640px;max-width:80vw;opacity:0.035;pointer-events:none}
+  .contact-grid{position:relative;display:grid;grid-template-columns:1fr 1.05fr;gap:56px;align-items:start}
+  .contact-info .lead{font-size:clamp(16px,4vw,19px);line-height:1.55;color:rgba(244,241,234,0.72);margin:18px 0 30px;max-width:480px;text-wrap:pretty}
+  .info-list{display:flex;flex-direction:column;gap:14px;margin-bottom:28px}
+  .info-list .row{display:flex;align-items:center;gap:12px;font-size:16px;color:rgba(244,241,234,0.85)}
+  .info-list svg{color:var(--green-light);flex-shrink:0}
+  .response{display:inline-flex;align-items:center;gap:10px;background:var(--panel);border:1px solid rgba(244,241,234,0.12);border-radius:999px;padding:9px 16px;font-weight:500;font-size:13px;color:rgba(244,241,234,0.8)}
+  .response .pulse{width:9px;height:9px;border-radius:50%;background:var(--green);box-shadow:0 0 0 3px rgba(47,191,113,0.25);flex-shrink:0}
+
+  /* form card */
+  .form-card{background:#fff;border-radius:16px;padding:clamp(24px,4vw,36px);box-shadow:0 30px 70px rgba(0,0,0,0.4)}
+  .form-card h2{font-family:Syne,sans-serif;font-weight:700;font-size:22px;color:var(--ink);margin-bottom:6px}
+  .form-card .sub{font-size:14px;color:var(--ink-muted);margin-bottom:22px}
+  .field{margin-bottom:16px}
+  .field label{display:block;font-weight:600;font-size:14px;color:var(--ink);margin-bottom:7px}
+  .field input,.field textarea{width:100%;font-family:inherit;font-size:16px;color:var(--ink);background:var(--sand);border:1px solid rgba(13,31,19,0.12);border-radius:10px;padding:12px 14px;outline:none;transition:border-color .2s,box-shadow .2s}
+  .field input:focus,.field textarea:focus{border-color:var(--green);box-shadow:0 0 0 3px rgba(47,191,113,0.18)}
+  .field textarea{resize:vertical;min-height:130px}
+  .form-note{font-size:13px;color:var(--ink-muted);text-align:center;margin-top:14px}
+
+  /* ============ Footer ============ */
+  .footer{background:var(--bg-darker);padding:40px 0}
+  .footer-top{display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}
+  .footer-logo{display:flex;align-items:center;gap:10px}
+  .footer-logo img{height:30px;width:auto}
+  .footer-logo span{font-family:Syne,sans-serif;font-weight:800;font-size:16px;color:var(--cream)}
+  .footer-links{display:flex;gap:24px;font-size:14px;flex-wrap:wrap}
+  .footer-links a{color:rgba(244,241,234,0.55)}
+  .footer-links a:hover{color:var(--green-light)}
+  .footer-copy{max-width:var(--maxw);margin:20px auto 0;padding-top:18px;border-top:1px solid rgba(244,241,234,0.08);font-size:13px;color:rgba(244,241,234,0.4)}
+
+  @media (max-width:900px){ .contact-grid{grid-template-columns:1fr;gap:36px} .contact-info .lead{max-width:none} }
+  @media (max-width:880px){
+    .nav-toggle{display:flex}
+    .nav-links{position:absolute;top:100%;left:0;right:0;flex-direction:column;align-items:stretch;gap:0;background:var(--bg-dark);border-bottom:1px solid rgba(244,241,234,0.12);padding:8px 24px 20px;transform:translateY(-8px);opacity:0;visibility:hidden;transition:opacity .25s,transform .25s,visibility .25s;box-shadow:0 20px 40px rgba(0,0,0,0.35)}
+    .nav-links.open{opacity:1;visibility:visible;transform:translateY(0)}
+    .nav-links a{padding:14px 4px;border-bottom:1px solid rgba(244,241,234,0.08);font-size:17px}
+    .nav-links a.active{border-bottom:1px solid rgba(244,241,234,0.08);color:var(--green-light);padding-bottom:14px}
+    .nav-links .btn-quote{margin-top:14px;padding:14px 20px;border-bottom:0;text-align:center}
+  }
+  @media (max-width:560px){ .container{padding-left:20px;padding-right:20px} .footer-top{flex-direction:column;text-align:center} .footer-links{justify-content:center} }
+</style>
+</head>
+<body>
+
+<!-- ============ NAV (header) ============ -->
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <img src="images/logo.png" alt="Flower Bloom Studios">
+      <span>Flower Bloom Studios</span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="portfolio.html">Work</a>
+      <a href="index.html#services">Services</a>
+      <a href="contact.html" class="active">Contact</a>
+      <a href="book.html" class="btn btn-quote">Book a Free Call</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ============ CONTACT ============ -->
+<section class="contact">
+  <div class="glow"></div>
+  <img class="watermark" src="images/logo.png" alt="">
+  <div class="container contact-grid">
+
+    <div class="contact-info">
+      <div class="eyebrow">Contact</div>
+      <h1 class="h1">Let's talk about your <span style="color:var(--green)">website.</span></h1>
+      <p class="lead">Tell me a bit about your project and I'll get back to you fast. No pressure, no sales pitch. Prefer to email or call directly? Either works.</p>
+      <div class="info-list">
+        <div class="row"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:reid.scott@bloomwebworks.com" style="color:var(--green-light)">reid.scott@bloomwebworks.com</a></div>
+        <div class="row"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg><a href="tel:2253635220" style="color:var(--green-light)">225-363-5220</a></div>
+        <div class="row"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Prairieville, Louisiana</span></div>
+      </div>
+      <div class="response"><span class="pulse"></span>I usually reply within a few hours</div>
+    </div>
+
+    <div class="form-card">
+      <h2>Send me a message</h2>
+      <div class="sub">Fill this out and it goes straight to my inbox.</div>
+      <form id="contactForm" novalidate>
+        <div class="field"><label for="cname">Name</label><input id="cname" type="text" autocomplete="name" required></div>
+        <div class="field"><label for="cemail">Your email</label><input id="cemail" type="email" autocomplete="email" required></div>
+        <div class="field"><label for="cbiz">Business (optional)</label><input id="cbiz" type="text"></div>
+        <div class="field"><label for="cmsg">What can I help with?</label><textarea id="cmsg" required></textarea></div>
+        <button type="submit" class="btn btn-primary" style="width:100%">Send Message</button>
+        <div class="form-note">This opens your email app with the message ready to send to reid.scott@bloomwebworks.com.</div>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <a href="index.html" class="footer-logo">
+        <img src="images/logo.png" alt="Bloom Studios">
+        <span>Bloom Studios</span>
+      </a>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="portfolio.html">Work</a>
+        <a href="index.html#services">Services</a>
+        <a href="contact.html">Contact</a>
+        <a href="book.html">Book</a>
+      </div>
+    </div>
+    <div class="footer-copy">© 2026 Bloom Studios by Reid Scott · 225-363-5220 · Prairieville, LA</div>
+  </div>
+</footer>
+
+<script>
+  // Mobile menu toggle
+  var toggle = document.getElementById('navToggle');
+  var links = document.getElementById('navLinks');
+  toggle.addEventListener('click', function(){
+    var open = links.classList.toggle('open');
+    toggle.classList.toggle('open', open);
+    toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  links.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){
+      links.classList.remove('open');
+      toggle.classList.remove('open');
+      toggle.setAttribute('aria-expanded','false');
+    });
+  });
+
+  // Contact form -> opens email app addressed to Reid
+  document.getElementById('contactForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    var name = document.getElementById('cname').value.trim();
+    var email = document.getElementById('cemail').value.trim();
+    var biz = document.getElementById('cbiz').value.trim();
+    var msg = document.getElementById('cmsg').value.trim();
+    if(!name || !email || !msg){ alert('Please add your name, email, and a message.'); return; }
+    var subject = 'Website inquiry from ' + name + (biz ? ' (' + biz + ')' : '');
+    var body = msg + '\n\n' + '---\nName: ' + name + '\nEmail: ' + email + (biz ? '\nBusiness: ' + biz : '');
+    window.location.href = 'mailto:reid.scott@bloomwebworks.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+  });
+</script>
+</body>
+</html>

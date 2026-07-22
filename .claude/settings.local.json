@@ -36,7 +36,9 @@
       "Bash(find 'C:/Users/reids/OneDrive/WEBSITE WORK/Websites/FLOWER BLOOM STUDIO/claude design sites/connect to github' -type f '\\(' -iname *.png -o -iname *.jpg -o -iname *.jpeg '\\)' -mmin -15)",
       "Bash(python -c \"print\\(open\\('images/portfolio-pscott.png','rb'\\).read\\(8\\)\\)\")",
       "Bash(cp C:/Users/reids/Downloads/portfolio-pscott.png.png 'C:/Users/reids/OneDrive/WEBSITE WORK/Websites/FLOWER BLOOM STUDIO/claude design sites/connect to github/images/portfolio-pscott.png')",
-      "Bash(python -c \"print\\('PNG header OK' if open\\('images/portfolio-pscott.png','rb'\\).read\\(8\\)==b'\\\\x89PNG\\\\r\\\\n\\\\x1a\\\\n' else 'NOT A PNG'\\)\")"
+      "Bash(python -c \"print\\('PNG header OK' if open\\('images/portfolio-pscott.png','rb'\\).read\\(8\\)==b'\\\\x89PNG\\\\r\\\\n\\\\x1a\\\\n' else 'NOT A PNG'\\)\")",
+      "Bash(python edits.py)",
+      "Bash(python edits2.py)"
     ]
   }
 }
