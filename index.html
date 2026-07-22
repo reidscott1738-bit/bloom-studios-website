@@ -490,9 +490,6 @@
   </div>
 </footer>
 
-<!-- ============ STICKY MOBILE BOOKING BAR ============ -->
-<a href="#contact" class="mobile-cta" id="mobileCta"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-3px;margin-right:8px"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>Book a Free Call →</a>
-
 <script>
   // Nav: solid background on scroll
   var nav = document.getElementById('nav');
@@ -516,16 +513,6 @@
       toggle.setAttribute('aria-expanded','false');
     });
   });
-
-  // Sticky mobile CTA: hide while the booking section is on screen (avoids overlap)
-  var mobileCta = document.getElementById('mobileCta');
-  var contact = document.getElementById('contact');
-  if (mobileCta && contact && 'IntersectionObserver' in window) {
-    var io = new IntersectionObserver(function(entries){
-      entries.forEach(function(e){ mobileCta.classList.toggle('hidden', e.isIntersecting); });
-    }, { threshold: 0.12 });
-    io.observe(contact);
-  }
 </script>
 </body>
 </html>
