@@ -9,7 +9,22 @@
       "Read(//c/Users/reids/.config/**)",
       "Read(//c/Users/reids/**)",
       "Bash(cp -r 'C:/Users/reids/OneDrive/WEBSITE WORK/Websites/FLOWER BLOOM STUDIO/claude design sites/Bloom Studios Website Spec v3-handoff/bloom-studios-website-spec-v3/README.md' 'C:/Users/reids/OneDrive/WEBSITE WORK/Websites/FLOWER BLOOM STUDIO/claude design sites/connect to github/')",
-      "Bash(cp -r 'C:/Users/reids/OneDrive/WEBSITE WORK/Websites/FLOWER BLOOM STUDIO/claude design sites/Bloom Studios Website Spec v3-handoff/bloom-studios-website-spec-v3/project' 'C:/Users/reids/OneDrive/WEBSITE WORK/Websites/FLOWER BLOOM STUDIO/claude design sites/connect to github/')"
+      "Bash(cp -r 'C:/Users/reids/OneDrive/WEBSITE WORK/Websites/FLOWER BLOOM STUDIO/claude design sites/Bloom Studios Website Spec v3-handoff/bloom-studios-website-spec-v3/project' 'C:/Users/reids/OneDrive/WEBSITE WORK/Websites/FLOWER BLOOM STUDIO/claude design sites/connect to github/')",
+      "Bash(winget --version)",
+      "Bash(where gh *)",
+      "Bash(where git-credential-manager *)",
+      "Bash(where git-credential-manager-core *)",
+      "Bash(git remote *)",
+      "Bash(git branch *)",
+      "Bash(git push *)",
+      "Bash(awk '{print $5}')",
+      "Bash(command -v python)",
+      "Bash(command -v python3)",
+      "Bash(command -v node)",
+      "Bash(python -)",
+      "Bash(git add *)",
+      "Bash(git -c core.quotepath=false commit -q -m 'Use Bloom Studios logo on loading screen instead of B placeholder *)",
+      "Bash(git -c core.quotepath=false commit -q -m 'Rebuild home page as clean, fully responsive HTML/CSS *)"
     ]
   }
 }
