@@ -39,6 +39,9 @@
   .btn-outline-dark{border:1.5px solid rgba(13,31,19,0.45);color:var(--ink);padding:12px 24px;font-size:17px;white-space:nowrap}
   .btn-outline-dark:hover{color:var(--green);border-color:var(--green)}
 
+  /* sticky mobile booking bar */
+  .mobile-cta{display:none}
+
   /* ============ Nav ============ */
   .nav{position:fixed;top:0;left:0;right:0;z-index:100;background:transparent;border-bottom:1px solid transparent;transition:background .3s,border-color .3s}
   .nav.scrolled{background:var(--bg-dark);border-bottom:1px solid rgba(244,241,234,0.12)}
@@ -184,6 +187,9 @@
     .grid-4{grid-template-columns:1fr 1fr}
   }
   @media (max-width:880px){
+    .mobile-cta{display:block;position:fixed;left:12px;right:12px;bottom:12px;z-index:95;padding:16px;text-align:center;font-weight:700;font-size:17px;color:var(--bg-dark);background:var(--green);border-radius:12px;box-shadow:0 10px 30px rgba(0,0,0,0.4);transition:transform .3s ease,opacity .3s ease}
+    .mobile-cta:hover{color:var(--bg-dark)}
+    .mobile-cta.hidden{transform:translateY(150%);opacity:0;pointer-events:none}
     .nav-toggle{display:flex}
     .nav-links{position:absolute;top:100%;left:0;right:0;flex-direction:column;align-items:stretch;gap:0;background:var(--bg-dark);border-bottom:1px solid rgba(244,241,234,0.12);padding:8px 24px 20px;transform:translateY(-8px);opacity:0;visibility:hidden;transition:opacity .25s,transform .25s,visibility .25s;box-shadow:0 20px 40px rgba(0,0,0,0.35)}
     .nav-links.open{opacity:1;visibility:visible;transform:translateY(0)}
@@ -227,7 +233,7 @@
       <a href="portfolio.html">Work</a>
       <a href="#services">Services</a>
       <a href="#contact">Contact</a>
-      <a href="#contact" class="btn btn-quote">Get a Free Quote</a>
+      <a href="#contact" class="btn btn-quote">Book a Free Call</a>
     </div>
   </div>
 </nav>
@@ -242,7 +248,7 @@
       <h1 class="h1" style="margin-bottom:22px">Get a website that <span style="color:var(--green)">wins you the job</span> before the phone even rings.</h1>
       <p class="lead">Fully custom, built around your business, and live in as little as 2 weeks. When customers Google you, they'll find a company worth hiring.</p>
       <div class="cta-row">
-        <a href="#contact" class="btn btn-primary">Get My Free Quote</a>
+        <a href="#contact" class="btn btn-primary">Book My Free Call</a>
         <a href="portfolio.html" class="btn btn-outline">See My Work →</a>
       </div>
       <div class="assurance"><span style="color:var(--green)">✓</span> Flat price quoted up front&nbsp;&nbsp;·&nbsp;&nbsp;<span style="color:var(--green)">✓</span> Live in as little as 2 weeks&nbsp;&nbsp;·&nbsp;&nbsp;<span style="color:var(--green)">✓</span> 24/7 support, direct from me</div>
@@ -355,8 +361,8 @@
       </div>
     </div>
     <div style="text-align:center;margin-top:48px">
-      <p class="lead-dark" style="margin:0 0 14px;text-wrap:pretty">You already do great work. Your website should prove it before they call someone else.</p>
-      <a href="#contact" style="font-weight:600;font-size:17px">Show me what my site could look like →</a>
+      <p class="lead-dark" style="margin:0 0 22px;text-wrap:pretty">You already do great work. Your website should prove it before they call someone else.</p>
+      <a href="#contact" class="btn btn-primary">Book My Free Call →</a>
     </div>
   </div>
 </section>
@@ -422,6 +428,10 @@
         <p>Hosting set up, site live, and a walkthrough so you can run it yourself. After that you've got 24/7 support and a site that stays current as your company grows.</p>
       </div>
     </div>
+    <div style="text-align:center;margin-top:48px">
+      <a href="#contact" class="btn btn-primary">Book My Free Call →</a>
+      <div style="margin-top:14px;font-weight:500;font-size:14px;color:var(--ink-muted)">Free, no pressure — just a straight answer about what your site needs and what it costs.</div>
+    </div>
   </div>
 </section>
 
@@ -471,8 +481,9 @@
   <img class="contact-watermark" src="images/logo.png" alt="">
   <div class="container contact-grid">
     <div class="contact-info">
+      <div class="eyebrow" style="color:var(--green-light)">Book Your Free Call</div>
       <h2 class="h2" style="margin-bottom:18px">Your next customer is searching right now. Make sure they find you.</h2>
-      <p>Book a time that works for you. No pressure, no pitch — just a straight answer about what your business needs and what it costs.</p>
+      <p>Pick a time on the calendar and we'll talk. No pressure, no pitch — just a straight answer about what your business needs and what it costs.</p>
       <div class="lines">
         <div>Email · <a href="tel:2253635220" style="color:var(--green-light)">Cell: 225-363-5220</a></div>
         <div>📍 Prairieville, Louisiana</div>
@@ -484,6 +495,7 @@
         <span class="pulse"></span>
         <span class="txt">Booking up fast — <strong style="color:var(--ink)">12 calls booked this month</strong> · only 3 spots left this week</span>
       </div>
+      <div style="text-align:center;font-family:Syne,sans-serif;font-weight:700;font-size:17px;color:var(--ink);padding:4px 0 12px">Pick a time that works for you 👇</div>
       <div class="cal">
         <iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0GgSpogzVd3VTHgTlF5pDr_8JQs5ohjlcH9y0qno-2dOy-q93q-DtjCwZ59hYfbyQn_9Ikch7j?gv=true" title="Book a meeting with Reid" loading="lazy"></iframe>
       </div>
@@ -512,6 +524,9 @@
   </div>
 </footer>
 
+<!-- ============ STICKY MOBILE BOOKING BAR ============ -->
+<a href="#contact" class="mobile-cta" id="mobileCta">📅 Book a Free Call →</a>
+
 <script>
   // Nav: solid background on scroll
   var nav = document.getElementById('nav');
@@ -535,6 +550,16 @@
       toggle.setAttribute('aria-expanded','false');
     });
   });
+
+  // Sticky mobile CTA: hide while the booking section is on screen (avoids overlap)
+  var mobileCta = document.getElementById('mobileCta');
+  var contact = document.getElementById('contact');
+  if (mobileCta && contact && 'IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){ mobileCta.classList.toggle('hidden', e.isIntersecting); });
+    }, { threshold: 0.12 });
+    io.observe(contact);
+  }
 </script>
 </body>
 </html>

@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Work — Flower Bloom Studios | Websites Built for Real Businesses</title>
+<meta name="description" content="Real websites Flower Bloom Studios built for home service businesses and nonprofits across Louisiana — Greenfield Construction, ProClean Surface Works, Friends of the Eagles, PScott Productions, and Core Building.">
+<link rel="icon" href="images/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Inter:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+  /* ============ Base ============ */
+  :root{
+    --bg-dark:#0D1F13; --bg-darker:#0A180F; --panel:#12291A;
+    --green:#2FBF71; --green-light:#7FE0A8; --gold:#E8B84B;
+    --cream:#F4F1EA; --sand:#EDE8DC; --ink:#0D1F13; --ink-muted:#41503F;
+    --maxw:1180px;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:Inter,system-ui,sans-serif;background:var(--bg-dark);color:var(--cream);-webkit-font-smoothing:antialiased}
+  img{max-width:100%}
+  a{color:var(--green);text-decoration:none}
+  a:hover{color:var(--green-light)}
+  ::selection{background:var(--green);color:var(--bg-dark)}
+  .container{max-width:var(--maxw);margin:0 auto;padding-left:24px;padding-right:24px}
+  .h1{font-family:Syne,sans-serif;font-weight:800;font-size:clamp(30px,6.6vw,48px);line-height:1.05;color:var(--cream)}
+  .h2{font-family:Syne,sans-serif;font-weight:700;font-size:clamp(27px,4.8vw,40px);line-height:1.12;color:var(--cream);text-wrap:pretty}
+  .eyebrow{font-weight:600;font-size:13px;letter-spacing:0.14em;text-transform:uppercase;margin-bottom:16px}
+  .section{padding:clamp(60px,9vw,96px) 0}
+
+  /* buttons */
+  .btn{display:inline-block;font-weight:600;border-radius:10px;text-align:center;transition:background .2s,color .2s,border-color .2s;line-height:1.2}
+  .btn-primary{background:var(--green);color:var(--bg-dark);padding:15px 28px;font-size:clamp(15px,4vw,17px)}
+  .btn-primary:hover{background:var(--green-light);color:var(--bg-dark)}
+
+  /* sticky mobile booking bar */
+  .mobile-cta{display:none}
+
+  /* ============ Nav ============ */
+  .nav{position:fixed;top:0;left:0;right:0;z-index:100;background:transparent;border-bottom:1px solid transparent;transition:background .3s,border-color .3s}
+  .nav.scrolled{background:var(--bg-dark);border-bottom:1px solid rgba(244,241,234,0.12)}
+  .nav-inner{max-width:var(--maxw);margin:0 auto;padding:14px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+  .nav-logo{display:flex;align-items:center;gap:10px}
+  .nav-logo img{height:36px;width:auto}
+  .nav-logo span{font-family:Syne,sans-serif;font-weight:800;font-size:18px;color:var(--cream);letter-spacing:0.01em}
+  .nav-links{display:flex;align-items:center;gap:30px}
+  .nav-links a{font-weight:500;font-size:16px;color:var(--cream)}
+  .nav-links a:not(.btn):hover{color:var(--green-light)}
+  .nav-links a.active{color:var(--green-light);border-bottom:2px solid var(--green);padding-bottom:2px}
+  .nav-links .btn-quote{font-weight:600;color:var(--bg-dark);background:var(--green);padding:10px 20px;border-radius:10px}
+  .nav-links .btn-quote:hover{background:var(--green-light);color:var(--bg-dark)}
+  .nav-toggle{display:none;flex-direction:column;justify-content:center;gap:5px;width:44px;height:44px;background:none;border:0;cursor:pointer;padding:8px}
+  .nav-toggle span{display:block;height:2px;width:100%;background:var(--cream);border-radius:2px;transition:transform .3s,opacity .3s}
+  .nav-toggle.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+  .nav-toggle.open span:nth-child(2){opacity:0}
+  .nav-toggle.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+
+  /* ============ Work hero ============ */
+  .work-hero{position:relative;overflow:hidden;background:var(--bg-dark);padding:clamp(120px,20vw,150px) 0 clamp(48px,8vw,64px)}
+  .work-hero .glow{position:absolute;top:-360px;left:-260px;width:900px;height:900px;max-width:150vw;background:radial-gradient(circle,rgba(47,191,113,0.08),transparent 62%);pointer-events:none}
+  .work-hero .inner{position:relative}
+  .work-hero h1{max-width:820px;margin-bottom:20px}
+  .work-hero p{font-size:clamp(17px,4.4vw,19px);line-height:1.55;color:rgba(244,241,234,0.7);max-width:640px;text-wrap:pretty}
+
+  /* ============ Projects ============ */
+  .projects-section{background-color:var(--cream);background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E")}
+  .projects{display:flex;flex-direction:column;gap:clamp(56px,9vw,96px)}
+  .proj{display:grid;grid-template-columns:1.05fr 0.95fr;gap:clamp(32px,5vw,60px);align-items:center}
+  .proj.reverse{grid-template-columns:0.95fr 1.05fr}
+  .proj .shot{display:block;background:var(--sand);border:1px solid rgba(13,31,19,0.1);border-radius:16px;padding:20px;height:400px;box-sizing:border-box}
+  .proj .shot img{width:100%;height:100%;object-fit:cover;object-position:top;border-radius:10px;display:block}
+  .proj .eyebrow{color:var(--green);margin-bottom:14px}
+  .proj h2{font-family:Syne,sans-serif;font-weight:700;font-size:clamp(26px,4.4vw,34px);line-height:1.12;color:var(--ink);margin-bottom:16px;text-wrap:pretty}
+  .proj p{font-size:16px;line-height:1.6;color:var(--ink-muted);margin-bottom:16px;text-wrap:pretty}
+  .proj p.live-note{font-weight:600;color:var(--green);margin-bottom:20px}
+  .tags{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px}
+  .tag{background:var(--sand);border:1px solid rgba(13,31,19,0.08);border-radius:999px;padding:6px 14px;font-weight:500;font-size:13px;color:var(--ink-muted)}
+  .proj blockquote{font-style:italic;font-size:17px;line-height:1.6;color:var(--ink-muted);margin:0 0 10px;border-left:2px solid var(--green);padding-left:16px}
+  .proj .who{font-weight:600;font-size:15px;color:var(--ink);margin-bottom:20px}
+  .proj .who span{font-weight:400;color:var(--ink-muted)}
+  .proj-link{font-weight:600;font-size:17px}
+  .proj .cap{font-size:12px;color:var(--ink-muted);opacity:0.7;margin-top:10px}
+  .shot-placeholder{display:flex;align-items:center;justify-content:center;flex-direction:column;gap:14px;text-align:center;background:var(--bg-dark);border-color:rgba(244,241,234,0.12)}
+  .shot-placeholder img{width:74px;height:auto;opacity:0.9}
+  .shot-placeholder .pt{font-family:Syne,sans-serif;font-weight:700;font-size:20px;color:var(--cream)}
+  .shot-placeholder .ps{font-weight:600;font-size:13px;color:var(--green-light)}
+
+  /* ============ Approach ============ */
+  .approach-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:32px}
+  .approach-card{background:var(--panel);border:1px solid rgba(244,241,234,0.12);border-radius:16px;padding:clamp(26px,4vw,32px)}
+  .approach-card h3{font-family:Syne,sans-serif;font-weight:700;font-size:clamp(20px,4.5vw,22px);line-height:1.25;color:var(--cream);margin-bottom:12px}
+  .approach-card p{font-size:16px;line-height:1.6;color:rgba(244,241,234,0.7)}
+  .head-center{text-align:center;margin:0 auto 56px}
+
+  /* ============ Final CTA ============ */
+  .final-cta{position:relative;overflow:hidden;background:var(--bg-dark);border-top:1px solid rgba(244,241,234,0.08);padding:clamp(72px,12vw,110px) 0}
+  .final-cta .glow{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:900px;height:900px;max-width:150vw;background:radial-gradient(circle,rgba(47,191,113,0.08),transparent 62%);pointer-events:none}
+  .final-cta .wm{position:absolute;right:-180px;bottom:-150px;width:700px;max-width:90vw;opacity:0.035;pointer-events:none}
+  .final-cta .inner{position:relative;max-width:760px;margin:0 auto;text-align:center}
+  .final-cta p{font-size:clamp(17px,4vw,19px);line-height:1.55;color:rgba(244,241,234,0.7);margin:0 0 32px;text-wrap:pretty}
+  .final-cta .assurance{font-weight:500;font-size:13px;color:rgba(244,241,234,0.6);margin-top:18px}
+
+  /* ============ Footer ============ */
+  .footer{background:var(--bg-darker);padding:48px 0}
+  .footer-top{display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}
+  .footer-logo{display:flex;align-items:center;gap:10px}
+  .footer-logo img{height:32px;width:auto}
+  .footer-logo span{font-family:Syne,sans-serif;font-weight:800;font-size:17px;color:var(--cream)}
+  .footer-links{display:flex;gap:24px;font-size:14px;flex-wrap:wrap}
+  .footer-links a{color:rgba(244,241,234,0.55)}
+  .footer-links a:hover{color:var(--green-light)}
+  .footer-meta{font-size:14px;color:rgba(244,241,234,0.55)}
+  .footer-copy{max-width:var(--maxw);margin:24px auto 0;padding-top:20px;border-top:1px solid rgba(244,241,234,0.08);font-size:14px;color:rgba(244,241,234,0.4)}
+
+  /* ============ Responsive ============ */
+  @media (max-width:880px){
+    .mobile-cta{display:block;position:fixed;left:12px;right:12px;bottom:12px;z-index:95;padding:16px;text-align:center;font-weight:700;font-size:17px;color:var(--bg-dark);background:var(--green);border-radius:12px;box-shadow:0 10px 30px rgba(0,0,0,0.4);transition:transform .3s ease,opacity .3s ease}
+    .mobile-cta:hover{color:var(--bg-dark)}
+    .nav-toggle{display:flex}
+    .nav-links{position:absolute;top:100%;left:0;right:0;flex-direction:column;align-items:stretch;gap:0;background:var(--bg-dark);border-bottom:1px solid rgba(244,241,234,0.12);padding:8px 24px 20px;transform:translateY(-8px);opacity:0;visibility:hidden;transition:opacity .25s,transform .25s,visibility .25s;box-shadow:0 20px 40px rgba(0,0,0,0.35)}
+    .nav-links.open{opacity:1;visibility:visible;transform:translateY(0)}
+    .nav-links a{padding:14px 4px;border-bottom:1px solid rgba(244,241,234,0.08);font-size:17px}
+    .nav-links a.active{border-bottom:1px solid rgba(244,241,234,0.08);color:var(--green-light);padding-bottom:14px}
+    .nav-links .btn-quote{margin-top:14px;padding:14px 20px;border-bottom:0;text-align:center}
+  }
+  @media (max-width:760px){
+    .proj,.proj.reverse{grid-template-columns:1fr;gap:28px}
+    .proj .shot{height:300px}
+    .proj.reverse .shot{order:-1}
+    .approach-grid{grid-template-columns:1fr}
+    .head-center{margin-bottom:36px}
+  }
+  @media (max-width:560px){
+    .container{padding-left:20px;padding-right:20px}
+    .proj .shot{height:240px;padding:14px}
+    .btn-primary{display:block;width:100%}
+    .footer-top{flex-direction:column;text-align:center}
+    .footer-links{justify-content:center}
+  }
+</style>
+</head>
+<body>
+<!-- Portfolio page -->
+<!-- ============ NAV ============ -->
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <img src="images/logo.png" alt="Flower Bloom Studios">
+      <span>Flower Bloom Studios</span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="portfolio.html" class="active">Work</a>
+      <a href="index.html#services">Services</a>
+      <a href="index.html#contact">Contact</a>
+      <a href="index.html#contact" class="btn btn-quote">Book a Free Call</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ============ WORK HERO ============ -->
+<section class="work-hero">
+  <div class="glow"></div>
+  <div class="container inner">
+    <div class="eyebrow" style="color:var(--green-light)">The Work</div>
+    <h1 class="h1">Every business is different. <span style="color:var(--green)">So is every site.</span></h1>
+    <p>Different businesses, completely different websites — each one designed from scratch around what that business actually needed.</p>
+  </div>
+</section>
+
+<!-- ============ PROJECTS ============ -->
+<section class="section projects-section">
+  <div class="container">
+    <div class="projects">
+
+      <!-- Greenfield -->
+      <div class="proj">
+        <a href="https://monolith-formal-build.base44.app" target="_blank" rel="noopener" class="shot">
+          <img src="images/portfolio-greenfield.png" alt="Greenfield Construction website">
+        </a>
+        <div>
+          <div class="eyebrow">Custom Home Construction — Louisiana</div>
+          <h2>A home builder that finally looks as solid online as the homes it builds.</h2>
+          <p>Custom home construction, additions, and renovations. A bold, image-led site that puts the finished work front and center and makes it effortless to request a free estimate.</p>
+          <div class="tags">
+            <span class="tag">Home services</span>
+            <span class="tag">Custom design</span>
+            <span class="tag">Built-in local SEO</span>
+            <span class="tag">Lead capture</span>
+          </div>
+          <a href="https://monolith-formal-build.base44.app" target="_blank" rel="noopener" class="proj-link">View the live demo →</a>
+          <div class="cap">Demo website</div>
+        </div>
+      </div>
+
+      <!-- ProClean -->
+      <div class="proj reverse">
+        <div>
+          <div class="eyebrow">Exterior Cleaning — Baton Rouge, LA</div>
+          <h2>A pressure-washing company that looks as spotless as its work.</h2>
+          <p>ProClean Surface Works keeps Baton Rouge homes looking their best. Their site puts the finished results front and center and makes it effortless for a customer to see the quality, trust the company, and request a free quote.</p>
+          <p class="live-note">A real, live Bloom Studios build — up and running for the business today.</p>
+          <div class="tags">
+            <span class="tag">Home services</span>
+            <span class="tag">Custom design</span>
+            <span class="tag">Built-in local SEO</span>
+            <span class="tag">Lead capture</span>
+          </div>
+          <a href="https://procleansurfaces.com/" target="_blank" rel="noopener" class="proj-link">Visit procleansurfaces.com →</a>
+          <div class="cap">Live client website</div>
+        </div>
+        <a href="https://procleansurfaces.com/" target="_blank" rel="noopener" class="shot">
+          <img src="images/portfolio-proclean.png" alt="ProClean Surface Works website">
+        </a>
+      </div>
+
+      <!-- Friends of the Eagles -->
+      <div class="proj">
+        <a href="https://friendsoftheeagles.com/" target="_blank" rel="noopener" class="shot">
+          <img src="images/portfolio-eagles.png" alt="Friends of the Eagles website">
+        </a>
+        <div>
+          <div class="eyebrow">Nonprofit / Community — Louisiana</div>
+          <h2>A site built to serve a mission, not sell a product.</h2>
+          <p>Friends of the Eagles rallies supporters around its cause and its signature Soirée event. A warm, photo-led site that makes it easy to learn, donate, and get involved — welcoming for every age group.</p>
+          <p class="live-note">A real, live Bloom Studios build — up and running for the organization today.</p>
+          <div class="tags">
+            <span class="tag">Nonprofit</span>
+            <span class="tag">Community-focused</span>
+            <span class="tag">Donations &amp; events</span>
+            <span class="tag">Easy to update</span>
+          </div>
+          <a href="https://friendsoftheeagles.com/" target="_blank" rel="noopener" class="proj-link">Visit friendsoftheeagles.com →</a>
+          <div class="cap">Live client website</div>
+        </div>
+      </div>
+
+      <!-- PScott Productions -->
+      <div class="proj reverse">
+        <div>
+          <div class="eyebrow">Creative / Production — Louisiana</div>
+          <h2>Clean and professional — without feeling stiff.</h2>
+          <p>PScott Productions needed a portfolio site built around the work itself. Minimal where it should be, personality where it counts — and simple to keep updated as new projects roll in.</p>
+          <p class="live-note">A real, live Bloom Studios build — up and running for the business today.</p>
+          <div class="tags">
+            <span class="tag">Portfolio</span>
+            <span class="tag">Built from zero</span>
+            <span class="tag">Custom design</span>
+            <span class="tag">Mobile-first</span>
+          </div>
+          <blockquote>"He really got what I was going for. The whole process was super easy."</blockquote>
+          <div class="who">Patrick S. <span>· PScott Productions</span></div>
+          <a href="https://www.pscott.productions/" target="_blank" rel="noopener" class="proj-link">Visit pscott.productions →</a>
+          <div class="cap">Live client website</div>
+        </div>
+        <a href="https://www.pscott.productions/" target="_blank" rel="noopener" class="shot shot-placeholder">
+          <img src="images/logo.png" alt="">
+          <div class="pt">PScott Productions</div>
+          <div class="ps">Visit pscott.productions →</div>
+        </a>
+      </div>
+
+      <!-- Core Building -->
+      <div class="proj">
+        <a href="https://corebuilding.org" target="_blank" rel="noopener" class="shot">
+          <img src="images/portfolio-core.png" alt="Core Building Systems website">
+        </a>
+        <div>
+          <div class="eyebrow">Construction — Louisiana</div>
+          <h2>A construction company that finally looks as solid online as its work.</h2>
+          <p>Core Building Systems builds better homes — their site needed to prove it. Built around their projects and reputation, so the craftsmanship does the talking.</p>
+          <p class="live-note">A real, live Bloom Studios build — up and running for the business today.</p>
+          <div class="tags">
+            <span class="tag">Construction</span>
+            <span class="tag">Project showcase</span>
+            <span class="tag">Custom design</span>
+            <span class="tag">Mobile-first</span>
+          </div>
+          <blockquote>"We entrusted Reid to build our website and we sure are glad we did. His creative mind and writing brought my website to life. A website I'm proud to have my name on."</blockquote>
+          <div class="who">Mike K. <span>· Core Building Systems</span></div>
+          <a href="https://corebuilding.org" target="_blank" rel="noopener" class="proj-link">Visit corebuilding.org →</a>
+          <div class="cap">Live client website</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ THE APPROACH ============ -->
+<section class="section">
+  <div class="container">
+    <div class="head-center" style="max-width:760px">
+      <div class="eyebrow" style="color:var(--green-light)">The Approach</div>
+      <h2 class="h2">Every business is different. <span style="color:var(--green)">One way of working.</span></h2>
+    </div>
+    <div class="approach-grid">
+      <div class="approach-card">
+        <h3>Message first.</h3>
+        <p>Every site starts with what makes that business worth choosing — the design gets built around it.</p>
+      </div>
+      <div class="approach-card">
+        <h3>Custom, every time.</h3>
+        <p>No two sites above look alike, because no two businesses are alike.</p>
+      </div>
+      <div class="approach-card">
+        <h3>Handled start to finish.</h3>
+        <p>Design, domain, hosting, launch — with a flat price up front and 24/7 support from me after.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FINAL CTA ============ -->
+<section class="final-cta">
+  <div class="glow"></div>
+  <img class="wm" src="images/logo.png" alt="">
+  <div class="container">
+    <div class="inner">
+      <h2 class="h2">Yours could be <span style="color:var(--green)">next.</span></h2>
+      <p>Tell me about your business — flat quote, reply within a few hours, no pressure.</p>
+      <a href="index.html#contact" class="btn btn-primary">Book My Free Call</a>
+      <div class="assurance"><span style="color:var(--green)">✓</span> Flat price quoted up front&nbsp;&nbsp;·&nbsp;&nbsp;<span style="color:var(--green)">✓</span> Live in as little as 2 weeks&nbsp;&nbsp;·&nbsp;&nbsp;<span style="color:var(--green)">✓</span> 24/7 support after launch</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <a href="index.html" class="footer-logo">
+        <img src="images/logo.png" alt="Bloom Studios">
+        <span>Bloom Studios</span>
+      </a>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="portfolio.html">Work</a>
+        <a href="index.html#services">Services</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+      <div class="footer-meta">225-363-5220 · Prairieville, LA</div>
+    </div>
+    <div class="footer-copy">© 2026 Bloom Studios by Reid Scott.</div>
+  </div>
+</footer>
+
+<!-- ============ STICKY MOBILE BOOKING BAR ============ -->
+<a href="index.html#contact" class="mobile-cta" id="mobileCta">📅 Book a Free Call →</a>
+
+<script>
+  // Nav: solid background on scroll
+  var nav = document.getElementById('nav');
+  function onScroll(){ if(window.scrollY > 40){ nav.classList.add('scrolled'); } else { nav.classList.remove('scrolled'); } }
+  window.addEventListener('scroll', onScroll, { passive:true });
+  onScroll();
+
+  // Mobile menu toggle
+  var toggle = document.getElementById('navToggle');
+  var links = document.getElementById('navLinks');
+  toggle.addEventListener('click', function(){
+    var open = links.classList.toggle('open');
+    toggle.classList.toggle('open', open);
+    toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  links.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){
+      links.classList.remove('open');
+      toggle.classList.remove('open');
+      toggle.setAttribute('aria-expanded','false');
+    });
+  });
+</script>
+</body>
+</html>
