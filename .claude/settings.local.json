@@ -29,7 +29,9 @@
       "Bash(cp \"project/uploads/procleansurfaces.com_ \\(2\\).png\" \"images/portfolio-proclean.png\")",
       "Bash(cp \"project/uploads/friendsoftheeagles.com_.png\" \"images/portfolio-eagles.png\")",
       "Bash(cp \"project/uploads/www.corebuilding.org_ \\(2\\).png\" \"images/portfolio-core.png\")",
-      "Bash(git -c core.quotepath=false commit -q -m 'Build Portfolio page + booking-optimize the site *)"
+      "Bash(git -c core.quotepath=false commit -q -m 'Build Portfolio page + booking-optimize the site *)",
+      "Bash(grep -viE 'node_modules|/\\\\.git/|/images/portfolio|OneDrive/WEBSITE')",
+      "Bash([ -f \"$OUT\" ])"
     ]
   }
 }
