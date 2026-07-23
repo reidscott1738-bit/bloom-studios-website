@@ -6,6 +6,7 @@
 <IfModule mod_mime.c>
   AddType image/webp .webp
   AddType image/svg+xml .svg
+  AddType font/woff2 .woff2
 </IfModule>
 
 # ---------- Compression ----------
