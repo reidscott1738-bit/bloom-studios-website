@@ -3,29 +3,27 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Web Design in Baton Rouge | Flower Bloom Studios</title>
-<meta name="description" content="Custom web design in Baton Rouge for home service businesses. Flat price quoted up front, live in as little as 2 weeks, and 24/7 support after launch.">
-<!-- SEO:start -->
-<link rel="canonical" href="https://flowerbloomstudios.com/">
+<title>Web Design Zachary LA | Flower Bloom Studios</title>
+<meta name="description" content="Custom web design for Zachary home service businesses. Flat price quoted up front, live in as little as 2 weeks, 24/7 support after launch.">
+<link rel="canonical" href="https://flowerbloomstudios.com/web-design-zachary/">
 <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
 <meta name="theme-color" content="#0D1F13">
 <meta name="author" content="Reid Scott">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Flower Bloom Studios">
 <meta property="og:locale" content="en_US">
-<meta property="og:url" content="https://flowerbloomstudios.com/">
-<meta property="og:title" content="Web Design in Baton Rouge | Flower Bloom Studios">
-<meta property="og:description" content="Custom web design in Baton Rouge for home service businesses. Flat price quoted up front, live in as little as 2 weeks, and 24/7 support after launch.">
+<meta property="og:url" content="https://flowerbloomstudios.com/web-design-zachary/">
+<meta property="og:title" content="Web Design Zachary LA | Flower Bloom Studios">
+<meta property="og:description" content="Custom web design for Zachary home service businesses. Flat price quoted up front, live in as little as 2 weeks, 24/7 support after launch.">
 <meta property="og:image" content="https://flowerbloomstudios.com/images/og-image.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Flower Bloom Studios, custom web design for home service businesses">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Web Design in Baton Rouge | Flower Bloom Studios">
-<meta name="twitter:description" content="Custom web design in Baton Rouge for home service businesses. Flat price quoted up front, live in as little as 2 weeks, and 24/7 support after launch.">
+<meta name="twitter:title" content="Web Design Zachary LA | Flower Bloom Studios">
+<meta name="twitter:description" content="Custom web design for Zachary home service businesses. Flat price quoted up front, live in as little as 2 weeks, 24/7 support after launch.">
 <meta name="twitter:image" content="https://flowerbloomstudios.com/images/og-image.jpg">
-<!-- SEO:end -->
-<link rel="icon" href="images/logo.png">
+<link rel="icon" href="../images/logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Inter:ital,wght@0,400;0,500;0,600;1,400&display=swap">
@@ -254,10 +252,26 @@
   @media (max-width:900px){ .footer-cols{grid-template-columns:1fr 1fr;gap:34px} }
   @media (max-width:560px){ .footer-cols{grid-template-columns:1fr;gap:28px;text-align:left} }
 
-  /* ---- homepage service areas ---- */
-  .areas{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+  /* ---- location page additions ---- */
+  .loc-hero{padding:clamp(120px,18vw,160px) 0 clamp(48px,7vw,64px)}
+  .prose{max-width:760px}
+  .prose p{font-size:clamp(16px,4vw,18px);line-height:1.68;color:var(--ink-muted);margin:0 0 20px;text-wrap:pretty}
+  .prose h3{font-family:Syne,sans-serif;font-weight:700;font-size:clamp(20px,4.5vw,25px);color:var(--ink);margin:34px 0 14px}
+  .prose-dark p{color:rgba(244,241,234,0.72)}
+  .niche-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:8px}
+  .niche{background:#fff;border:1px solid rgba(13,31,19,0.12);border-radius:12px;padding:18px 18px;font-weight:600;font-size:15px;color:var(--ink)}
+  .niche span{display:block;font-weight:400;font-size:13px;color:var(--ink-muted);margin-top:4px}
+  .areas{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
   .area-chip{border:1px solid rgba(244,241,234,0.22);border-radius:999px;padding:9px 16px;font-size:14px;color:rgba(244,241,234,0.8)}
-  a.area-chip:hover{border-color:var(--green);color:var(--green-light)}
+  .cta-band{background:var(--panel);border:1px solid rgba(244,241,234,0.12);border-radius:20px;padding:clamp(30px,5vw,46px);text-align:center;max-width:820px;margin:0 auto}
+  .cta-band h2{margin-bottom:14px}
+  .cta-band p{color:rgba(244,241,234,0.7);font-size:17px;line-height:1.6;margin-bottom:26px;text-wrap:pretty}
+  .related{margin-top:36px;padding-top:26px;border-top:1px solid rgba(244,241,234,0.12)}
+  .related .rl{font-weight:600;font-size:13px;letter-spacing:0.14em;text-transform:uppercase;color:rgba(244,241,234,0.5);margin-bottom:14px}
+  .related a{display:inline-block;margin:0 20px 10px 0;font-size:16px;font-weight:500;color:var(--green)}
+  .related a:hover{color:var(--green-light)}
+  @media (max-width:900px){ .niche-grid{grid-template-columns:repeat(2,1fr)} }
+  @media (max-width:560px){ .niche-grid{grid-template-columns:1fr} }
 </style>
 <script type="application/ld+json">
 {
@@ -267,11 +281,9 @@
    "@type": "ProfessionalService",
    "@id": "https://flowerbloomstudios.com/#business",
    "name": "Flower Bloom Studios",
-   "alternateName": "Flower Bloom Studios Web Design",
    "url": "https://flowerbloomstudios.com/",
    "logo": "https://flowerbloomstudios.com/images/logo.webp",
    "image": "https://flowerbloomstudios.com/images/og-image.jpg",
-   "description": "Custom web design and development for home service businesses. Flat pricing quoted up front, sites live in as little as two weeks, and 24/7 support after launch.",
    "telephone": "+1-225-363-5220",
    "email": "reid.scott@bloomwebworks.com",
    "priceRange": "$$",
@@ -298,120 +310,47 @@
      "opens": "08:00",
      "closes": "19:00"
     }
-   ],
-   "areaServed": [
-    {
-     "@type": "City",
-     "name": "Baton Rouge"
-    },
-    {
-     "@type": "City",
-     "name": "Prairieville"
-    },
-    {
-     "@type": "City",
-     "name": "Gonzales"
-    },
-    {
-     "@type": "City",
-     "name": "Denham Springs"
-    },
-    {
-     "@type": "City",
-     "name": "Zachary"
-    },
-    {
-     "@type": "City",
-     "name": "Baker"
-    },
-    {
-     "@type": "City",
-     "name": "Central"
-    },
-    {
-     "@type": "AdministrativeArea",
-     "name": "Ascension Parish"
-    },
-    {
-     "@type": "AdministrativeArea",
-     "name": "Livingston Parish"
-    },
-    {
-     "@type": "AdministrativeArea",
-     "name": "East Baton Rouge Parish"
-    },
-    {
-     "@type": "Country",
-     "name": "United States"
-    }
-   ],
-   "knowsAbout": [
-    "Web design",
-    "Website redesign",
-    "Custom website development",
-    "Local SEO",
-    "Small business websites",
-    "Home service business marketing"
-   ],
-   "hasOfferCatalog": {
-    "@type": "OfferCatalog",
-    "name": "Web design services",
-    "itemListElement": [
-     {
-      "@type": "Offer",
-      "itemOffered": {
-       "@type": "Service",
-       "name": "Custom website design"
-      }
-     },
-     {
-      "@type": "Offer",
-      "itemOffered": {
-       "@type": "Service",
-       "name": "Website redesign"
-      }
-     },
-     {
-      "@type": "Offer",
-      "itemOffered": {
-       "@type": "Service",
-       "name": "Small business websites"
-      }
-     },
-     {
-      "@type": "Offer",
-      "itemOffered": {
-       "@type": "Service",
-       "name": "Website maintenance and support"
-      }
-     },
-     {
-      "@type": "Offer",
-      "itemOffered": {
-       "@type": "Service",
-       "name": "Local SEO websites"
-      }
-     }
-    ]
-   }
+   ]
   },
   {
-   "@type": "WebSite",
-   "@id": "https://flowerbloomstudios.com/#website",
-   "url": "https://flowerbloomstudios.com/",
-   "name": "Flower Bloom Studios",
-   "inLanguage": "en-US",
-   "publisher": {
+   "@type": "WebPage",
+   "@id": "https://flowerbloomstudios.com/web-design-zachary/#webpage",
+   "url": "https://flowerbloomstudios.com/web-design-zachary/",
+   "name": "Web Design Zachary LA | Flower Bloom Studios",
+   "description": "Custom web design for Zachary home service businesses. Flat price quoted up front, live in as little as 2 weeks, 24/7 support after launch.",
+   "isPartOf": {
+    "@id": "https://flowerbloomstudios.com/#website"
+   },
+   "about": {
     "@id": "https://flowerbloomstudios.com/#business"
-   }
+   },
+   "inLanguage": "en-US"
+  },
+  {
+   "@type": "Service",
+   "@id": "https://flowerbloomstudios.com/web-design-zachary/#service",
+   "name": "Web design in Zachary, Louisiana",
+   "serviceType": "Web design and development",
+   "provider": {
+    "@id": "https://flowerbloomstudios.com/#business"
+   },
+   "areaServed": {
+    "@type": "City",
+    "name": "Zachary",
+    "containedInPlace": {
+     "@type": "AdministrativeArea",
+     "name": "East Baton Rouge Parish"
+    }
+   },
+   "description": "Custom web design for Zachary home service businesses. Flat price quoted up front, live in as little as 2 weeks, 24/7 support after launch."
   },
   {
    "@type": "FAQPage",
-   "@id": "https://flowerbloomstudios.com/#faq",
+   "@id": "https://flowerbloomstudios.com/web-design-zachary/#faq",
    "mainEntity": [
     {
      "@type": "Question",
-     "name": "How much does a website cost?",
+     "name": "How much does a website cost for a Zachary business?",
      "acceptedAnswer": {
       "@type": "Answer",
       "text": "Most projects land between $1000 and $5000. You get one flat quote up front. A deposit starts the project, and the balance is due at launch."
@@ -435,10 +374,18 @@
     },
     {
      "@type": "Question",
-     "name": "Can I update it myself?",
+     "name": "My business runs mostly on word of mouth. Do I still need a website?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Yes. You get a simple editor for your text and photos, and I'll walk you through it at launch. And if you'd rather not touch it, maintenance keeps it current for you."
+      "text": "Word of mouth is where most home service work still comes from, and a website makes it convert better. People who get your name from a neighbor look you up before they call. If there is nothing to find, or what they find looks abandoned, some of them quietly call somebody else instead."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Can you make sure I show up for searches in Zachary specifically and not just Baton Rouge?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. Local search treats towns separately, so the site is set up to make it clear where you actually work. Pair that with a properly filled out Google Business Profile and you compete in Zachary rather than getting lost behind the whole metro."
      }
     },
     {
@@ -458,6 +405,24 @@
      }
     }
    ]
+  },
+  {
+   "@type": "BreadcrumbList",
+   "@id": "https://flowerbloomstudios.com/web-design-zachary/#breadcrumb",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Home",
+     "item": "https://flowerbloomstudios.com/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Web Design Zachary",
+     "item": "https://flowerbloomstudios.com/web-design-zachary/"
+    }
+   ]
   }
  ]
 }
@@ -465,197 +430,177 @@
 </head>
 <body>
 
-<!-- ============ NAV ============ -->
 <nav class="nav" id="nav">
   <div class="nav-inner">
-    <a href="#top" class="nav-logo">
-      <img src="images/logo.webp" alt="Flower Bloom Studios" width="240" height="234" decoding="async" fetchpriority="high">
+    <a href="../" class="nav-logo">
+      <img src="../images/logo.webp" alt="Flower Bloom Studios" width="240" height="234" decoding="async" fetchpriority="high">
       <span>Flower Bloom Studios</span>
     </a>
     <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
     <div class="nav-links" id="navLinks">
-      <a href="#top">Home</a>
-      <a href="portfolio.html">Work</a>
-      <a href="#services">Services</a>
-      <a href="contact.html">Contact</a>
-      <a href="book.html" class="btn btn-quote">Book a Free Call</a>
+      <a href="../">Home</a>
+      <a href="../portfolio.html">Work</a>
+      <a href="../#services">Services</a>
+      <a href="../contact.html">Contact</a>
+      <a href="../book.html" class="btn btn-quote">Book a Free Call</a>
     </div>
   </div>
 </nav>
 
 <!-- ============ HERO ============ -->
-<section id="top" class="hero">
+<section id="top" class="hero loc-hero">
   <div class="hero-glow"></div>
-  <img class="hero-watermark" src="images/logo.webp" alt="" aria-hidden="true" width="240" height="234" loading="lazy" decoding="async">
-  <div class="container hero-grid">
-    <div>
-      <div class="eyebrow" style="color:var(--green-light)">Web Design for Home Service Businesses, Baton Rouge, LA</div>
-      <h1 class="h1" style="margin-bottom:22px">Get a website that <span style="color:var(--green)">wins you the job</span> before the phone even rings.</h1>
-      <p class="lead">Fully custom, built around your business, and live in as little as 2 weeks. When customers Google you, they'll find a company worth hiring.</p>
+  <img class="hero-watermark" src="../images/logo.webp" alt="" aria-hidden="true" width="240" height="234" loading="lazy" decoding="async">
+  <div class="container">
+    <div style="max-width:820px">
+      <div class="eyebrow" style="color:var(--green-light)">Web Design &middot; Zachary, Louisiana</div>
+      <h1 class="h1" style="margin-bottom:22px">Web design in Zachary that <span style="color:var(--green)">wins you the job</span>.</h1>
+      <p class="lead" style="max-width:640px">Custom websites for Zachary trades and home service companies, built around your business and live in as little as 2 weeks.</p>
       <div class="cta-row">
-        <a href="#contact" class="btn btn-primary">Book My Free Call</a>
-        <a href="portfolio.html" class="btn btn-outline">See My Work →</a>
+        <a href="../book.html" class="btn btn-primary">Book My Free Call</a>
+        <a href="../portfolio.html" class="btn btn-outline">See My Work &rarr;</a>
       </div>
-      <div class="assurance"><span style="color:var(--green)">✓</span> Flat price quoted up front&nbsp;&nbsp;·&nbsp;&nbsp;<span style="color:var(--green)">✓</span> Live in as little as 2 weeks&nbsp;&nbsp;·&nbsp;&nbsp;<span style="color:var(--green)">✓</span> 24/7 support, direct from me</div>
-    </div>
-    <div>
-      <img class="hero-img" src="images/hero-laptop.webp" alt="Client website shown on a laptop" width="1024" height="1024" decoding="async" fetchpriority="high">
-    </div>
-  </div>
-  <div class="container hero-proof">
-    <div style="display:flex;align-items:center;gap:14px">
-      <span class="stars">★★★★★</span>
-      <span class="muted">Rated 5.0 by every client to date</span>
-    </div>
-    <div class="divider"></div>
-    <div class="muted" style="font-style:italic">"A website I'm proud to have my name on." <span style="font-style:normal;font-weight:600;color:var(--cream)">Mike K., Core Building</span></div>
-  </div>
-</section>
-
-<!-- ============ TICKER ============ -->
-<section class="ticker">
-  <div class="ticker-track">
-    <div class="ticker-group">
-      <span>Custom Web Design</span><span class="dot">•</span><span>Live in as Little as 2 Weeks</span><span class="dot">•</span><span>Built In Local SEO</span><span class="dot">•</span><span>Mobile First</span><span class="dot">•</span><span>24/7 Support</span><span class="dot">•</span><span>Hosting &amp; Launch Handled</span><span class="dot">•</span><span>You Own Everything</span><span class="dot">•</span>
-    </div>
-    <div class="ticker-group">
-      <span>Custom Web Design</span><span class="dot">•</span><span>Live in as Little as 2 Weeks</span><span class="dot">•</span><span>Built In Local SEO</span><span class="dot">•</span><span>Mobile First</span><span class="dot">•</span><span>24/7 Support</span><span class="dot">•</span><span>Hosting &amp; Launch Handled</span><span class="dot">•</span><span>You Own Everything</span><span class="dot">•</span>
+      <div class="assurance"><span style="color:var(--green)">&#10003;</span> Flat price quoted up front&nbsp;&nbsp;&middot;&nbsp;&nbsp;<span style="color:var(--green)">&#10003;</span> Live in as little as 2 weeks&nbsp;&nbsp;&middot;&nbsp;&nbsp;<span style="color:var(--green)">&#10003;</span> 24/7 support, direct from me</div>
     </div>
   </div>
 </section>
 
-<!-- ============ RECENT WORK ============ -->
+<!-- ============ LOCAL CONTEXT ============ -->
+<section class="section section-sand on-light">
+  <div class="container">
+    <div class="eyebrow" style="color:var(--green)">The Local Picture</div>
+    <h2 class="h2" style="max-width:760px;margin-bottom:34px">Small town feel, metro area demand.</h2>
+    <div class="prose">
+      <p>Zachary sits at the northern end of East Baton Rouge Parish, far enough out to feel like its own town rather than a suburb. It is best known across the state for its school system, which has drawn steady residential growth from families who want the schools without moving out of the parish.</p>
+      <p>That pattern matters if you run a home service business. Families moving into a town for the schools are buying houses, and houses need roofs, HVAC systems, plumbing, lawn care, and eventually remodels. They are also new to the area, which means they have no established relationships with local trades and no one to ask. They search.</p>
+      <p>Zachary is small enough that word of mouth still carries real weight, but word of mouth now runs through a phone. Somebody gets your name from a neighbor, then looks you up before calling. What they find at that moment decides whether the recommendation actually turns into a job.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHAT I DO ============ -->
+<section class="section">
+  <div class="container">
+    <div class="head-center" style="max-width:760px">
+      <div class="eyebrow" style="color:var(--green-light)">How I Work</div>
+      <h2 class="h2">What you get, and how it runs.</h2>
+    </div>
+    <div class="grid grid-3">
+      <div class="approach-card">
+        <h3>One flat price.</h3>
+        <p>You get a single number before anything starts, so you know exactly what the site costs on day one. A deposit begins the project and the balance is due at launch.</p>
+      </div>
+      <div class="approach-card">
+        <h3>Live in as little as 2 weeks.</h3>
+        <p>Most builds move fast because you are working directly with the person designing the site. You get a timeline up front and I hold to it.</p>
+      </div>
+      <div class="approach-card">
+        <h3>Completely hands off.</h3>
+        <p>Design, copy, domain, hosting, and launch are all handled. After launch you get 24/7 support directly from me, plus maintenance if you would rather never touch it.</p>
+      </div>
+    </div>
+    <div class="prose prose-dark" style="max-width:760px;margin:44px auto 0">
+        <p>A website for a home service company has one job. It turns somebody who has never heard of you into somebody who calls. Everything I build works backward from that.</p>
+        <p>Your site gets written around what actually makes your business worth choosing, not padded out with generic lines about quality and integrity. Your real work goes front and center, because photos of finished jobs sell harder than any paragraph ever will. Your phone number stays reachable from every screen, and the contact form asks for what you genuinely need in order to quote a job.</p>
+        <p>It is built mobile first, because that is where nearly every home service search starts. It loads fast, which matters both for the person waiting on it and for how you rank. None of it is a template.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROOF ============ -->
 <section class="section section-sand on-light">
   <div class="container">
     <div class="head-split">
       <div style="max-width:640px">
-        <div class="eyebrow" style="color:var(--green)">Recent Work</div>
+        <div class="eyebrow" style="color:var(--green)">Local Proof</div>
         <h2 class="h2">Real websites, live for real businesses.</h2>
       </div>
-      <a href="portfolio.html" class="btn btn-outline-dark">See all work →</a>
+      <a href="../portfolio.html" class="btn btn-outline-dark">See all work &rarr;</a>
     </div>
     <div class="grid grid-3">
-      <a href="portfolio.html" class="work-card">
-        <div class="thumb"><img src="images/work-greenfield.webp" alt="Greenfield Construction website" width="800" height="454" loading="lazy" decoding="async"></div>
-        <div class="body"><div class="title">Greenfield Construction</div><div class="sub">Custom Home Construction, Louisiana</div></div>
-      </a>
-      <a href="portfolio.html" class="work-card">
-        <div class="thumb"><img src="images/work-proclean.webp" alt="ProClean Surface Works website" width="800" height="521" loading="lazy" decoding="async"></div>
+      <a href="../portfolio.html" class="work-card">
+        <div class="thumb"><img src="../images/work-proclean.webp" alt="ProClean Surface Works exterior cleaning website, Baton Rouge" width="800" height="521" loading="lazy" decoding="async"></div>
         <div class="body"><div class="title">ProClean Surface Works</div><div class="sub">Exterior Cleaning, Baton Rouge, LA</div></div>
       </a>
-      <a href="portfolio.html" class="work-card">
-        <div class="thumb"><img src="images/work-eagles.webp" alt="Friends of the Eagles website" width="800" height="521" loading="lazy" decoding="async"></div>
+      <a href="../portfolio.html" class="work-card">
+        <div class="thumb"><img src="../images/work-greenfield.webp" alt="Greenfield Construction custom home building website, Louisiana" width="800" height="454" loading="lazy" decoding="async"></div>
+        <div class="body"><div class="title">Greenfield Construction</div><div class="sub">Custom Home Construction, Louisiana</div></div>
+      </a>
+      <a href="../portfolio.html" class="work-card">
+        <div class="thumb"><img src="../images/work-eagles.webp" alt="Friends of the Eagles community nonprofit website, Louisiana" width="800" height="521" loading="lazy" decoding="async"></div>
         <div class="body"><div class="title">Friends of the Eagles</div><div class="sub">Nonprofit / Community, Louisiana</div></div>
       </a>
     </div>
-    <div style="text-align:center;margin-top:36px;font-size:15px;color:var(--ink-muted)">Live builds and demos, straight from the portfolio. <a href="portfolio.html">See the full portfolio →</a></div>
   </div>
 </section>
 
-<!-- ============ SOCIAL PROOF ============ -->
-<section id="work" class="section">
-  <div class="container">
-    <div class="head-center" style="max-width:820px">
-      <div class="eyebrow" style="color:var(--green-light)">Client Results</div>
-      <h2 class="h2">Join the businesses that finally look as good online as they do on the job.</h2>
-    </div>
-    <div class="grid grid-2">
-      <div class="quote-card">
-        <span class="stars">★★★★★</span>
-        <h3>"A website I'm proud to have my name on."</h3>
-        <p>"We entrusted Reid to build our website and we sure are glad we did. His creative mind and writing brought my website to life."</p>
-        <div class="who">Mike K. <span>· Core Building</span></div>
-      </div>
-      <div class="quote-card">
-        <span class="stars">★★★★★</span>
-        <h3>"Clean and professional without feeling stiff."</h3>
-        <p>"Reid got what I was going for. The whole process was super easy, and I'm seriously happy with how it turned out."</p>
-        <div class="who">Patrick S. <span>· PScott Productions</span></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ BEFORE / AFTER ============ -->
-<section class="section section-sand on-light">
-  <div class="container">
-    <div class="head-center" style="max-width:760px">
-      <div class="eyebrow" style="color:var(--green)">Sound Familiar?</div>
-      <h2 class="h2">Customers are checking you out online right now. What are they finding?</h2>
-    </div>
-    <div class="grid grid-2" style="align-items:stretch">
-      <div class="ba-card ba-before">
-        <div class="eyebrow" style="margin-bottom:0;color:var(--ink-muted)">Before</div>
-        <img src="images/before.webp" alt="Outdated website" width="1100" height="821" loading="lazy" decoding="async">
-        <div class="ba-list">
-          <div class="row"><span class="ba-mark-x">✕</span><span>Outdated, and it shows</span></div>
-          <div class="row"><span class="ba-mark-x">✕</span><span>Broken on phones</span></div>
-          <div class="row"><span class="ba-mark-x">✕</span><span>No reviews, no photos, no reason to trust you</span></div>
-          <div class="row"><span class="ba-mark-x">✕</span><span>They hit back and call the next company</span></div>
-        </div>
-      </div>
-      <div class="ba-card ba-after">
-        <div class="eyebrow" style="margin-bottom:0;color:var(--green)">After</div>
-        <img src="images/after.webp" alt="Modern professional website" width="1100" height="821" loading="lazy" decoding="async">
-        <div class="ba-list">
-          <div class="row"><span class="ba-mark-check">✓</span><span>Looks like the most professional company in town</span></div>
-          <div class="row"><span class="ba-mark-check">✓</span><span>Works perfectly on every phone</span></div>
-          <div class="row"><span class="ba-mark-check">✓</span><span>Your reviews and your work, front and center</span></div>
-          <div class="row"><span class="ba-mark-check">✓</span><span>They fill out the form instead of leaving</span></div>
-        </div>
-      </div>
-    </div>
-    <div style="text-align:center;margin-top:48px">
-      <p class="lead-dark" style="margin:0 0 22px;text-wrap:pretty">You already do great work. Your website should prove it before they call someone else.</p>
-      <a href="#contact" class="btn btn-primary">Book My Free Call →</a>
-    </div>
-  </div>
-</section>
-
-<!-- ============ THE APPROACH ============ -->
-<section id="services" class="section">
-  <div class="container">
-    <div class="head-center" style="max-width:760px">
-      <div class="eyebrow" style="color:var(--green-light)">The Approach</div>
-      <h2 class="h2">Every business is different. <span style="color:var(--green)">One way of working.</span></h2>
-    </div>
-    <div class="grid grid-3">
-      <div class="approach-card">
-        <h3>Message first.</h3>
-        <p>Every site starts with what makes that business worth choosing, and the design gets built around it.</p>
-      </div>
-      <div class="approach-card">
-        <h3>Custom, every time.</h3>
-        <p>No two sites I build look alike, because no two businesses are alike.</p>
-      </div>
-      <div class="approach-card">
-        <h3>Handled start to finish.</h3>
-        <p>Design, domain, hosting, and launch, with a flat price up front and 24/7 support from me after.</p>
-      </div>
-    </div>
-    <div style="text-align:center;margin-top:48px">
-      <a href="#contact" class="btn btn-primary">Book My Free Call →</a>
-      <div style="margin-top:14px;font-weight:500;font-size:14px;color:rgba(244,241,234,0.6)">Free, no pressure. Just a straight answer about what your site needs and what it costs.</div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ GUARANTEE + FAQ ============ -->
+<!-- ============ WHO I BUILD FOR ============ -->
 <section class="section section-cream on-light">
   <div class="container">
     <div class="head-center" style="max-width:760px">
-      <div class="eyebrow" style="color:var(--green)">No Surprises</div>
-      <h2 class="h2">The only thing you risk is staying invisible.</h2>
+      <div class="eyebrow" style="color:var(--green)">Who I Build For</div>
+      <h2 class="h2">Built for the trades keeping Zachary running.</h2>
     </div>
-    <div class="promise">
-      <h3>The No-Surprises Promise</h3>
-      <p>One flat price, quoted before anything starts. You refine the design with me until it's right, with No Limit revision rounds included. You own your domain, your hosting, and your site, 100%. And you get 24/7 support from me after launch, not a ticket queue.</p>
+    <div class="niche-grid">
+      <div class="niche">Plumbers<span>Emergency and service calls</span></div>
+      <div class="niche">Roofers<span>Storm and replacement work</span></div>
+      <div class="niche">HVAC companies<span>Repair and install</span></div>
+      <div class="niche">Electricians<span>Residential and light commercial</span></div>
+      <div class="niche">Exterior cleaning<span>Pressure and soft washing</span></div>
+      <div class="niche">Landscapers<span>Lawn care and outdoor build</span></div>
+      <div class="niche">Remodelers<span>Kitchens, baths, additions</span></div>
+      <div class="niche">General contractors<span>Custom and new build</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ AREAS SERVED ============ -->
+<section class="section">
+  <div class="container">
+    <div style="max-width:820px">
+      <div class="eyebrow" style="color:var(--green-light)">Areas Served</div>
+      <h2 class="h2" style="margin-bottom:22px">Zachary and north East Baton Rouge.</h2>
+      <div class="prose prose-dark">
+        <p>Zachary, Baker, Central, and the northern side of the parish are all regular territory, along with the rest of the Baton Rouge metro.</p>
+        <p>Everything runs over calls, texts, and email, so working together never depends on being nearby.</p>
+      </div>
+      <div class="areas">
+        <span class="area-chip">Baton Rouge</span>
+        <span class="area-chip">Prairieville</span>
+        <span class="area-chip">Gonzales</span>
+        <span class="area-chip">Denham Springs</span>
+        <span class="area-chip">Zachary</span>
+        <span class="area-chip">Baker</span>
+        <span class="area-chip">Central</span>
+        <span class="area-chip">Walker</span>
+        <span class="area-chip">Ascension Parish</span>
+        <span class="area-chip">Livingston Parish</span>
+        <span class="area-chip">East Baton Rouge Parish</span>
+      </div>
+      <div class="related">
+        <div class="rl">Keep reading</div>
+        <a href="../web-design-baton-rouge/">Web design in Baton Rouge</a>
+        <a href="../web-design-baker/">Web design in Baker</a>
+        <a href="../web-design-central-la/">Web design in Central</a>
+        <a href="../small-business-websites/">Small business websites</a>
+        <a href="../local-seo-websites/">Local SEO websites</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="section section-cream on-light">
+  <div class="container">
+    <div class="head-center" style="max-width:760px">
+      <div class="eyebrow" style="color:var(--green)">Questions</div>
+      <h2 class="h2">Straight answers.</h2>
     </div>
     <div class="faq">
       <details>
-        <summary>How much does a website cost?<span class="plus">+</span></summary>
+        <summary>How much does a website cost for a Zachary business?<span class="plus">+</span></summary>
         <p>Most projects land between $1000 and $5000. You get one flat quote up front. A deposit starts the project, and the balance is due at launch.</p>
       </details>
       <details>
@@ -667,8 +612,12 @@
         <p>Yes, we keep what's working, fix what isn't, and nothing goes offline during the switch.</p>
       </details>
       <details>
-        <summary>Can I update it myself?<span class="plus">+</span></summary>
-        <p>Yes. You get a simple editor for your text and photos, and I'll walk you through it at launch. And if you'd rather not touch it, maintenance keeps it current for you.</p>
+        <summary>My business runs mostly on word of mouth. Do I still need a website?<span class="plus">+</span></summary>
+        <p>Word of mouth is where most home service work still comes from, and a website makes it convert better. People who get your name from a neighbor look you up before they call. If there is nothing to find, or what they find looks abandoned, some of them quietly call somebody else instead.</p>
+      </details>
+      <details>
+        <summary>Can you make sure I show up for searches in Zachary specifically and not just Baton Rouge?<span class="plus">+</span></summary>
+        <p>Yes. Local search treats towns separately, so the site is set up to make it clear where you actually work. Pair that with a properly filled out Google Business Profile and you compete in Zachary rather than getting lost behind the whole metro.</p>
       </details>
       <details>
         <summary>What happens after launch?<span class="plus">+</span></summary>
@@ -682,61 +631,24 @@
   </div>
 </section>
 
-<!-- ============ SERVICE AREAS ============ -->
+<!-- ============ CTA ============ -->
 <section class="section">
   <div class="container">
-    <div style="max-width:820px">
-      <div class="eyebrow" style="color:var(--green-light)">Service Areas</div>
-      <h2 class="h2" style="margin-bottom:18px">Based in Baton Rouge, working across Louisiana and beyond.</h2>
-      <p class="lead" style="max-width:660px;margin-bottom:0">Most of my clients are home service companies around the capital region. Start with <a href="web-design-baton-rouge/">web design in Baton Rouge</a>, or find your town below.</p>
-      <div class="areas">
-        <a class="area-chip" href="web-design-baton-rouge/">Baton Rouge</a>
-        <a class="area-chip" href="web-design-prairieville/">Prairieville</a>
-        <a class="area-chip" href="web-design-gonzales/">Gonzales</a>
-        <a class="area-chip" href="web-design-denham-springs/">Denham Springs</a>
-        <a class="area-chip" href="web-design-zachary/">Zachary</a>
-        <a class="area-chip" href="web-design-baker/">Baker</a>
-        <a class="area-chip" href="web-design-central-la/">Central</a>
-        <a class="area-chip" href="web-design-ascension-parish/">Ascension Parish</a>
-        <a class="area-chip" href="web-design-livingston-parish/">Livingston Parish</a>
-      </div>
+    <div class="cta-band">
+      <h2 class="h2">Let's talk about your website.</h2>
+      <p>Fifteen minutes on the phone and you will know what your site needs, what it would cost, and how fast it could be live. No pressure either way.</p>
+      <a href="../book.html" class="btn btn-primary">Book My Free Call &rarr;</a>
+      <div style="margin-top:14px;font-weight:500;font-size:14px;color:rgba(244,241,234,0.6)">Free, no pressure. Just a straight answer about what your site needs and what it costs.</div>
     </div>
   </div>
 </section>
 
-<!-- ============ CONTACT ============ -->
-<section id="contact" class="section contact">
-  <div class="contact-glow"></div>
-  <img class="contact-watermark" src="images/logo.webp" alt="" aria-hidden="true" width="240" height="234" loading="lazy" decoding="async">
-  <div class="container contact-grid">
-    <div class="contact-info">
-      <div class="eyebrow" style="color:var(--green-light)">Book Your Free Call</div>
-      <h2 class="h2" style="margin-bottom:18px">Your next customer is searching right now. Make sure they find you.</h2>
-      <p>Pick a time on the calendar and we'll talk. No pressure, no pitch. Just a straight answer about what your business needs and what it costs.</p>
-      <div class="lines">
-        <div style="display:flex;align-items:center;gap:10px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--green-light);flex-shrink:0"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:reid.scott@bloomwebworks.com" style="color:var(--green-light)">reid.scott@bloomwebworks.com</a></div>
-        <div style="display:flex;align-items:center;gap:10px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--green-light);flex-shrink:0"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg><a href="tel:2253635220" style="color:var(--green-light)">225-363-5220</a></div>
-        <div style="display:flex;align-items:center;gap:10px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--green-light);flex-shrink:0"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Baton Rouge, Louisiana</span></div>
-        <div style="font-style:italic;font-size:15px;color:rgba(244,241,234,0.55)">Prefer to call or text? Do that instead.</div>
-      </div>
-    </div>
-    <div class="booking">
-      <div style="text-align:center;font-family:Syne,sans-serif;font-weight:700;font-size:17px;color:var(--ink);padding:4px 0 12px">Pick a time that works for you <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-3px"><path d="M12 5v14M19 12l-7 7-7-7"/></svg></div>
-      <div class="cal">
-        <div style="width:100%;height:100%;overflow:scroll" id="my-cal-inline-web-design-appointment-call"></div>
-      </div>
-      <div class="fine"><span style="color:var(--green)">✓</span> Flat price quoted up front · <span style="color:var(--green)">✓</span> Free, no pressure · <span style="color:var(--green)">✓</span> You talk to Reid, not a sales rep</div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ FOOTER ============ -->
 <footer class="footer">
   <div class="container">
     <div class="footer-cols">
       <div class="fcol fbrand">
-        <a href="#top" class="footer-logo">
-          <img src="images/logo.webp" alt="Flower Bloom Studios" width="240" height="234" loading="lazy" decoding="async">
+        <a href="../" class="footer-logo">
+          <img src="../images/logo.webp" alt="Flower Bloom Studios" width="240" height="234" loading="lazy" decoding="async">
           <span>Flower Bloom Studios</span>
         </a>
         <p>Custom websites for home service businesses. Flat price up front, live in as little as 2 weeks, and 24/7 support after launch.</p>
@@ -744,58 +656,41 @@
       </div>
       <div class="fcol">
         <div class="fh">Services</div>
-        <a href="custom-website-design/">Custom website design</a>
-        <a href="website-redesign/">Website redesign</a>
-        <a href="small-business-websites/">Small business websites</a>
-        <a href="local-seo-websites/">Local SEO websites</a>
-        <a href="website-maintenance/">Maintenance and support</a>
-        <a href="pricing/">Pricing</a>
-        <a href="industries/">All industries</a>
+        <a href="../custom-website-design/">Custom website design</a>
+        <a href="../website-redesign/">Website redesign</a>
+        <a href="../small-business-websites/">Small business websites</a>
+        <a href="../local-seo-websites/">Local SEO websites</a>
+        <a href="../website-maintenance/">Maintenance and support</a>
+        <a href="../pricing/">Pricing</a>
+        <a href="../industries/">All industries</a>
       </div>
       <div class="fcol">
         <div class="fh">Service areas</div>
-        <a href="web-design-baton-rouge/">Web design Baton Rouge</a>
-        <a href="web-design-prairieville/">Prairieville</a>
-        <a href="web-design-gonzales/">Gonzales</a>
-        <a href="web-design-denham-springs/">Denham Springs</a>
-        <a href="web-design-zachary/">Zachary</a>
-        <a href="web-design-ascension-parish/">Ascension Parish</a>
-        <a href="web-design-livingston-parish/">Livingston Parish</a>
+        <a href="../web-design-baton-rouge/">Web design Baton Rouge</a>
+        <a href="../web-design-prairieville/">Prairieville</a>
+        <a href="../web-design-gonzales/">Gonzales</a>
+        <a href="../web-design-denham-springs/">Denham Springs</a>
+        <a href="../web-design-zachary/">Zachary</a>
+        <a href="../web-design-ascension-parish/">Ascension Parish</a>
+        <a href="../web-design-livingston-parish/">Livingston Parish</a>
       </div>
       <div class="fcol">
         <div class="fh">Company</div>
-        <a href="#top">Home</a>
-        <a href="portfolio.html">Work</a>
-        <a href="contact.html">Contact</a>
-        <a href="book.html">Book a Free Call</a>
+        <a href="../">Home</a>
+        <a href="../portfolio.html">Work</a>
+        <a href="../contact.html">Contact</a>
+        <a href="../book.html">Book a Free Call</a>
       </div>
     </div>
     <div class="footer-copy">&copy; 2026 Flower Bloom Studios by Reid Scott. Custom web design in Baton Rouge, Louisiana.</div>
   </div>
 </footer>
 
-<!-- Cal.com inline booking embed -->
-<script type="text/javascript">
-  (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
-  Cal("init", "web-design-appointment-call", {origin:"https://app.cal.com"});
-  Cal.config = Cal.config || {};
-  Cal.config.forwardQueryParams = true;
-  Cal.ns["web-design-appointment-call"]("inline", {
-    elementOrSelector:"#my-cal-inline-web-design-appointment-call",
-    config: {"layout":"month_view","useSlotsViewOnSmallScreen":"true","theme":"light"},
-    calLink: "reid.scott/web-design-appointment-call",
-  });
-  Cal.ns["web-design-appointment-call"]("ui", {"theme":"light","cssVarsPerTheme":{"light":{"cal-brand":"#0d1f13"}},"hideEventTypeDetails":false,"layout":"month_view"});
-</script>
-
 <script>
-  // Nav: solid background on scroll
   var nav = document.getElementById('nav');
   function onScroll(){ if(window.scrollY > 40){ nav.classList.add('scrolled'); } else { nav.classList.remove('scrolled'); } }
   window.addEventListener('scroll', onScroll, { passive:true });
   onScroll();
-
-  // Mobile menu toggle
   var toggle = document.getElementById('navToggle');
   var links = document.getElementById('navLinks');
   toggle.addEventListener('click', function(){
@@ -803,7 +698,6 @@
     toggle.classList.toggle('open', open);
     toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
   });
-  // Close menu after tapping a link
   links.querySelectorAll('a').forEach(function(a){
     a.addEventListener('click', function(){
       links.classList.remove('open');

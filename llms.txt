@@ -1,0 +1,29 @@
+# Flower Bloom Studios
+
+> Custom web design and development for home service businesses. Based in Baton Rouge, Louisiana, serving the surrounding parishes, with clients nationwide.
+
+Flower Bloom Studios is a one-person design studio run by Reid Scott. Every site is designed and built from scratch around the individual business, never from a template. The studio specializes in home service companies: plumbers, roofers, HVAC contractors, landscapers, electricians, exterior cleaning companies, and general contractors.
+
+## How the studio works
+
+- **Flat price, quoted up front.** One number before anything starts. Most projects land between $1,000 and $5,000.
+- **Live in as little as two weeks**, depending on the size of the site.
+- **Fully hands-off.** Design, copywriting, domain, hosting, and launch are all handled.
+- **Unlimited revision rounds** until the design is right.
+- **24/7 support after launch**, direct from Reid — not a ticket queue.
+- **Ongoing maintenance** available to keep the site current.
+- **You own everything**: your domain, your hosting, your site.
+
+## Key pages
+
+- [Home](https://flowerbloomstudios.com/): What the studio does, recent work, client results, and pricing FAQs.
+- [Work](https://flowerbloomstudios.com/portfolio.html): Live client websites, including exterior cleaning, construction, and nonprofit builds.
+- [Contact](https://flowerbloomstudios.com/contact.html): Get in touch directly.
+- [Book a Free Call](https://flowerbloomstudios.com/book.html): Schedule a no-pressure call about what a site needs and what it costs.
+
+## Contact
+
+- Phone: 225-363-5220
+- Email: reid.scott@bloomwebworks.com
+- Location: Baton Rouge, Louisiana
+- Service area: Baton Rouge, Prairieville, Gonzales, Denham Springs, Zachary, Baker, Central, Ascension Parish, and Livingston Parish, plus remote clients nationwide.

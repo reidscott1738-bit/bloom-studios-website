@@ -1,0 +1,24 @@
+# robots.txt — Flower Bloom Studios
+# https://flowerbloomstudios.com
+
+User-agent: *
+Allow: /
+Disallow: /project/
+
+# AI crawlers — explicitly welcomed
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+Sitemap: https://flowerbloomstudios.com/sitemap.xml

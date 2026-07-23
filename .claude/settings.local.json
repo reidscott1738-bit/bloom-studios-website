@@ -38,7 +38,20 @@
       "Bash(cp C:/Users/reids/Downloads/portfolio-pscott.png.png 'C:/Users/reids/OneDrive/WEBSITE WORK/Websites/FLOWER BLOOM STUDIO/claude design sites/connect to github/images/portfolio-pscott.png')",
       "Bash(python -c \"print\\('PNG header OK' if open\\('images/portfolio-pscott.png','rb'\\).read\\(8\\)==b'\\\\x89PNG\\\\r\\\\n\\\\x1a\\\\n' else 'NOT A PNG'\\)\")",
       "Bash(python edits.py)",
-      "Bash(python edits2.py)"
+      "Bash(python edits2.py)",
+      "Bash(grep -ohiE \"https?://[a-z0-9.-]+\\\\.[a-z]{2,}[^\\\\\"' <\\)]*\" index.html contact.html book.html portfolio.html)",
+      "mcp__novamira-darkgoldenrod-me__mcp-adapter-discover-abilities",
+      "WebSearch",
+      "mcp__novamira-darkgoldenrod-me__mcp-adapter-execute-ability",
+      "Bash(git tag *)",
+      "Bash(python -c \"import PIL; from PIL import Image, features; print\\('Pillow', PIL.__version__\\); print\\('webp support:', features.check\\('webp'\\)\\)\")",
+      "Bash(python -m pip install --quiet Pillow)",
+      "Bash(python -c \"from PIL import Image, features; print\\('Pillow OK, webp:', features.check\\('webp'\\)\\)\")",
+      "Bash(python -c ' *)",
+      "Bash(grep -noE \"[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\\\.[a-z]{2,}|\\(\\\\\\(?[0-9]{3}\\\\\\)?[-. ][0-9]{3}[-. ][0-9]{4}\\)|Prairieville[^<]*|Baton Rouge[^<]*\" index.html portfolio.html book.html contact.html)",
+      "Bash(sort -u -t: -k3)",
+      "WebFetch(domain:bloomwebworks.com)",
+      "WebFetch(domain:flowerbloomstudios.com)"
     ]
   }
 }
