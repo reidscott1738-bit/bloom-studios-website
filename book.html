@@ -103,9 +103,9 @@
   .footer-logo img{height:30px;width:auto}
   .footer-logo span{font-family:Syne,sans-serif;font-weight:800;font-size:16px;color:var(--cream)}
   .footer-links{display:flex;gap:24px;font-size:14px;flex-wrap:wrap}
-  .footer-links a{color:rgba(244,241,234,0.55)}
+  .footer-links a{color:rgba(244,241,234,0.66)}
   .footer-links a:hover{color:var(--green-light)}
-  .footer-copy{max-width:var(--maxw);margin:20px auto 0;padding-top:18px;border-top:1px solid rgba(244,241,234,0.08);font-size:13px;color:rgba(244,241,234,0.4)}
+  .footer-copy{max-width:var(--maxw);margin:20px auto 0;padding-top:18px;border-top:1px solid rgba(244,241,234,0.08);font-size:13px;color:rgba(244,241,234,0.62)}
 
   /* ============ Responsive ============ */
   @media (max-width:900px){
@@ -130,14 +130,20 @@
   /* ---- footer link columns ---- */
   .footer-cols{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:40px;align-items:start}
   .fcol .fh{font-family:Syne,sans-serif;font-weight:700;font-size:15px;color:var(--cream);margin-bottom:15px}
-  .fcol a{display:block;font-size:14px;color:rgba(244,241,234,0.55);margin-bottom:10px;line-height:1.4}
+  .fcol a{display:block;font-size:14px;color:rgba(244,241,234,0.66);margin-bottom:10px;line-height:1.4}
   .fcol a:hover{color:var(--green-light)}
-  .fbrand p{font-size:14px;line-height:1.6;color:rgba(244,241,234,0.55);margin:14px 0 14px;max-width:290px}
+  .fbrand p{font-size:14px;line-height:1.6;color:rgba(244,241,234,0.66);margin:14px 0 14px;max-width:290px}
   .fbrand .fmeta{font-size:14px;color:rgba(244,241,234,0.75)}
   .fbrand .fmeta a{color:rgba(244,241,234,0.75)}
   .fbrand .fmeta a:hover{color:var(--green-light)}
   @media (max-width:900px){ .footer-cols{grid-template-columns:1fr 1fr;gap:34px} }
   @media (max-width:560px){ .footer-cols{grid-template-columns:1fr;gap:28px;text-align:left} }
+
+  /* ---- accessibility + contrast ---- */
+  main p a{text-decoration:underline;text-underline-offset:3px}
+  .skip-link{position:absolute;left:-9999px;top:0;background:var(--green);color:var(--bg-dark);padding:12px 20px;border-radius:0 0 8px 0;font-weight:600;z-index:200}
+  .skip-link:focus{left:0}
+  :focus-visible{outline:3px solid var(--green-light);outline-offset:2px}
 </style>
 <script type="application/ld+json">
 {
@@ -308,12 +314,13 @@
 </script>
 </head>
 <body>
+<a class="skip-link" href="#content">Skip to content</a>
 
 <!-- ============ NAV (header) ============ -->
 <nav class="nav" id="nav">
   <div class="nav-inner">
     <a href="index.html" class="nav-logo">
-      <img src="images/logo.webp" alt="Flower Bloom Studios" width="240" height="234" decoding="async" fetchpriority="high">
+      <img src="images/logo.webp" alt="" width="800" height="778" decoding="async" fetchpriority="high">
       <span>Flower Bloom Studios</span>
     </a>
     <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
@@ -329,10 +336,12 @@
   </div>
 </nav>
 
+<main id="content">
+
 <!-- ============ BOOKING ============ -->
 <section class="book">
   <div class="glow"></div>
-  <img class="watermark" src="images/logo.webp" alt="" aria-hidden="true" width="240" height="234" loading="lazy" decoding="async">
+  <img class="watermark" src="images/logo.webp" alt="" aria-hidden="true" width="800" height="778" loading="lazy" decoding="async">
   <div class="container book-grid">
 
     <!-- Branding / pitch -->
@@ -369,12 +378,14 @@
 </section>
 
 <!-- ============ FOOTER ============ -->
+</main>
+
 <footer class="footer">
   <div class="container">
     <div class="footer-cols">
       <div class="fcol fbrand">
         <a href="index.html" class="footer-logo">
-          <img src="images/logo.webp" alt="Flower Bloom Studios" width="240" height="234" loading="lazy" decoding="async">
+          <img src="images/logo.webp" alt="" width="800" height="778" loading="lazy" decoding="async">
           <span>Flower Bloom Studios</span>
         </a>
         <p>Custom websites for home service businesses. Flat price up front, live in as little as 2 weeks, and 24/7 support after launch.</p>
@@ -415,7 +426,8 @@
 <!-- Cal.com inline booking embed -->
 <script type="text/javascript">
   (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
-  Cal("init", "web-design-appointment-call", {origin:"https://app.cal.com"});
+  function __initCal(){
+    Cal("init", "web-design-appointment-call", {origin:"https://app.cal.com"});
   Cal.config = Cal.config || {};
   Cal.config.forwardQueryParams = true;
   Cal.ns["web-design-appointment-call"]("inline", {
@@ -424,6 +436,22 @@
     calLink: "reid.scott/web-design-appointment-call",
   });
   Cal.ns["web-design-appointment-call"]("ui", {"theme":"light","cssVarsPerTheme":{"light":{"cal-brand":"#0d1f13"}},"hideEventTypeDetails":false,"layout":"month_view"});
+  }
+
+  function __calBootstrap(){
+    var el = document.getElementById("my-cal-inline-web-design-appointment-call");
+    if (!el) { return; }
+    if (!("IntersectionObserver" in window)) { __initCal(); return; }
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { __initCal(); io.disconnect(); }
+      });
+    }, { rootMargin: "600px" });
+    io.observe(el);
+  }
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", __calBootstrap);
+  } else { __calBootstrap(); }
 </script>
 
 <script>

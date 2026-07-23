@@ -201,10 +201,10 @@
   .footer-logo img{height:32px;width:auto}
   .footer-logo span{font-family:Syne,sans-serif;font-weight:800;font-size:17px;color:var(--cream)}
   .footer-links{display:flex;gap:24px;font-size:14px;flex-wrap:wrap}
-  .footer-links a{color:rgba(244,241,234,0.55)}
+  .footer-links a{color:rgba(244,241,234,0.66)}
   .footer-links a:hover{color:var(--green-light)}
-  .footer-meta{font-size:14px;color:rgba(244,241,234,0.55)}
-  .footer-copy{max-width:var(--maxw);margin:24px auto 0;padding-top:20px;border-top:1px solid rgba(244,241,234,0.08);font-size:14px;color:rgba(244,241,234,0.4)}
+  .footer-meta{font-size:14px;color:rgba(244,241,234,0.66)}
+  .footer-copy{max-width:var(--maxw);margin:24px auto 0;padding-top:20px;border-top:1px solid rgba(244,241,234,0.08);font-size:14px;color:rgba(244,241,234,0.62)}
 
   /* ============ Responsive ============ */
   @media (max-width:980px){
@@ -243,9 +243,9 @@
   /* ---- footer link columns ---- */
   .footer-cols{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:40px;align-items:start}
   .fcol .fh{font-family:Syne,sans-serif;font-weight:700;font-size:15px;color:var(--cream);margin-bottom:15px}
-  .fcol a{display:block;font-size:14px;color:rgba(244,241,234,0.55);margin-bottom:10px;line-height:1.4}
+  .fcol a{display:block;font-size:14px;color:rgba(244,241,234,0.66);margin-bottom:10px;line-height:1.4}
   .fcol a:hover{color:var(--green-light)}
-  .fbrand p{font-size:14px;line-height:1.6;color:rgba(244,241,234,0.55);margin:14px 0 14px;max-width:290px}
+  .fbrand p{font-size:14px;line-height:1.6;color:rgba(244,241,234,0.66);margin:14px 0 14px;max-width:290px}
   .fbrand .fmeta{font-size:14px;color:rgba(244,241,234,0.75)}
   .fbrand .fmeta a{color:rgba(244,241,234,0.75)}
   .fbrand .fmeta a:hover{color:var(--green-light)}
@@ -256,6 +256,12 @@
   .areas{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
   .area-chip{border:1px solid rgba(244,241,234,0.22);border-radius:999px;padding:9px 16px;font-size:14px;color:rgba(244,241,234,0.8)}
   a.area-chip:hover{border-color:var(--green);color:var(--green-light)}
+
+  /* ---- accessibility + contrast ---- */
+  main p a{text-decoration:underline;text-underline-offset:3px}
+  .skip-link{position:absolute;left:-9999px;top:0;background:var(--green);color:var(--bg-dark);padding:12px 20px;border-radius:0 0 8px 0;font-weight:600;z-index:200}
+  .skip-link:focus{left:0}
+  :focus-visible{outline:3px solid var(--green-light);outline-offset:2px}
 
   /* ---- location page additions ---- */
   .loc-hero{padding:clamp(120px,18vw,160px) 0 clamp(48px,7vw,64px)}
@@ -434,11 +440,12 @@
 </script>
 </head>
 <body>
+<a class="skip-link" href="#content">Skip to content</a>
 
 <nav class="nav" id="nav">
   <div class="nav-inner">
     <a href="../" class="nav-logo">
-      <img src="../images/logo.webp" alt="Flower Bloom Studios" width="240" height="234" decoding="async" fetchpriority="high">
+      <img src="../images/logo.webp" alt="" width="800" height="778" decoding="async" fetchpriority="high">
       <span>Flower Bloom Studios</span>
     </a>
     <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
@@ -453,6 +460,8 @@
     </div>
   </div>
 </nav>
+
+<main id="content">
 
 <!-- ============ HERO ============ -->
 <section id="top" class="hero loc-hero">
@@ -647,12 +656,14 @@
   </div>
 </section>
 
+</main>
+
 <footer class="footer">
   <div class="container">
     <div class="footer-cols">
       <div class="fcol fbrand">
         <a href="../" class="footer-logo">
-          <img src="../images/logo.webp" alt="Flower Bloom Studios" width="240" height="234" loading="lazy" decoding="async">
+          <img src="../images/logo.webp" alt="" width="800" height="778" loading="lazy" decoding="async">
           <span>Flower Bloom Studios</span>
         </a>
         <p>Custom websites for home service businesses. Flat price up front, live in as little as 2 weeks, and 24/7 support after launch.</p>
