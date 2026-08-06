@@ -141,7 +141,7 @@
   .ba-card{border-radius:16px;padding:clamp(22px,4vw,28px);display:flex;flex-direction:column;gap:22px}
   .ba-before{background:var(--sand);border:1px solid rgba(13,31,19,0.1)}
   .ba-after{background:#fff;border:2px solid var(--green);box-shadow:0 24px 60px rgba(47,191,113,0.16)}
-  .ba-card img{width:100%;aspect-ratio:1000/563;object-fit:cover;object-position:top;border-radius:10px;display:block}
+  .ba-card img{width:100%;height:auto;aspect-ratio:1200/760;object-fit:cover;object-position:top;border-radius:10px;display:block}
   .ba-before img{border:1px solid rgba(13,31,19,0.1)}
   .ba-after img{border:1px solid rgba(13,31,19,0.08)}
   .ba-list{display:flex;flex-direction:column;gap:12px;font-size:16px;line-height:1.6;color:var(--ink-muted)}
@@ -171,7 +171,7 @@
 
   /* ---- about / meet Reid ---- */
   .about-grid{display:grid;grid-template-columns:0.8fr 1.2fr;gap:clamp(32px,5vw,60px);align-items:center}
-  .about-photo img{width:100%;max-width:400px;aspect-ratio:4/5;object-fit:cover;object-position:top;border-radius:18px;display:block;box-shadow:0 30px 70px rgba(0,0,0,0.45);border:1px solid rgba(244,241,234,0.12)}
+  .about-photo img{width:100%;height:auto;max-width:420px;aspect-ratio:1/1;object-fit:cover;object-position:center;border-radius:18px;display:block;box-shadow:0 30px 70px rgba(0,0,0,0.45);border:1px solid rgba(244,241,234,0.12)}
   .about-body p{font-size:clamp(16px,4vw,18px);line-height:1.65;color:rgba(244,241,234,0.78);margin:0 0 18px;text-wrap:pretty}
   .about-body .sig{margin-top:26px;display:flex;align-items:center;gap:14px}
   .about-body .sig .nm{font-family:Syne,sans-serif;font-weight:800;font-size:18px;color:var(--cream)}
@@ -527,7 +527,7 @@
       <a href="#top">Home</a>
       <a href="portfolio.html">Work</a>
       <a href="#services">Services</a>
-      <a href="#about">About</a>
+      <a href="about.html">About</a>
       <a href="contact.html">Contact</a>
       <a href="book.html" class="btn btn-quote">Book a Free Call</a>
     </div>
@@ -645,7 +645,7 @@
     <div class="grid grid-2" style="align-items:stretch">
       <div class="ba-card ba-before">
         <div class="eyebrow" style="margin-bottom:0;color:var(--ink-muted)">Before</div>
-        <img srcset="images/before-700.webp?v=2 700w, images/before.webp?v=2 1000w" sizes="(max-width:760px) 86vw, 44vw" src="images/before.webp?v=2" alt="Outdated, dated-looking roofing website" width="1000" height="563" loading="lazy" decoding="async">
+        <img srcset="images/before-700.webp?v=3 760w, images/before.webp?v=3 1200w" sizes="(max-width:760px) 86vw, 44vw" src="images/before.webp?v=3" alt="Outdated, dated-looking roofing website" width="1200" height="760" loading="lazy" decoding="async">
         <div class="ba-list">
           <div class="row"><span class="ba-mark-x">✕</span><span>Outdated, and it shows</span></div>
           <div class="row"><span class="ba-mark-x">✕</span><span>Broken on phones</span></div>
@@ -655,7 +655,7 @@
       </div>
       <div class="ba-card ba-after">
         <div class="eyebrow" style="margin-bottom:0;color:var(--green-ink)">After</div>
-        <img srcset="images/after-700.webp?v=2 700w, images/after.webp?v=2 1000w" sizes="(max-width:760px) 86vw, 44vw" src="images/after.webp?v=2" alt="Modern, professional roofing website" width="1000" height="563" loading="lazy" decoding="async">
+        <img srcset="images/after-700.webp?v=3 760w, images/after.webp?v=3 1200w" sizes="(max-width:760px) 86vw, 44vw" src="images/after.webp?v=3" alt="Modern, professional roofing website" width="1200" height="760" loading="lazy" decoding="async">
         <div class="ba-list">
           <div class="row"><span class="ba-mark-check">✓</span><span>Looks like the most professional company in town</span></div>
           <div class="row"><span class="ba-mark-check">✓</span><span>Works perfectly on every phone</span></div>
@@ -704,14 +704,13 @@
   <div class="container">
     <div class="about-grid">
       <div class="about-photo">
-        <img srcset="images/reid-about-560.webp 560w, images/reid-about.webp 900w" sizes="(max-width:820px) 320px, 400px" src="images/reid-about.webp" alt="Reid Scott, founder and web designer at Flower Bloom Studios" width="900" height="1125" loading="lazy" decoding="async">
+        <img srcset="images/reid-about-560.webp 640w, images/reid-about.webp 1000w" sizes="(max-width:820px) 320px, 420px" src="images/reid-about.webp" alt="Reid Scott, founder and web designer at Flower Bloom Studios" width="1000" height="1000" loading="lazy" decoding="async">
       </div>
       <div class="about-body">
         <div class="eyebrow" style="color:var(--green-light)">Who You Work With</div>
-        <h2 class="h2" style="margin-bottom:22px">Hi, I'm Reid. I'll be the one building your site.</h2>
-        <p>Flower Bloom Studios is me, Reid Scott. When you hire me, you are not handed off to an account manager or a junior somewhere overseas. The person you talk to on the first call is the same person designing your site, writing the copy, and answering your text six months after launch.</p>
-        <p>I started this studio because I kept seeing hard working home service companies lose jobs to competitors with a better website, not better work. So that is what I do now, and it is all I do. Every site is built from scratch around your business, quoted at one flat price up front, and live in as little as two weeks.</p>
-        <p>Being a one person studio is the whole point. You get direct communication, no red tape, and someone who actually cares whether your phone rings. That is not something a big agency can promise you.</p>
+        <h2 class="h2" style="margin-bottom:22px">Hi, I'm Reid Scott.</h2>
+        <p>I'm the creator of Flower Bloom Studios. I've been in the design space for a while now, ever since I started my own clothing brand a couple of years ago. That led to me building a website for myself, and then a bunch more for friends and family.</p>
+        <p>That is when I decided to create Flower Bloom Studios, because I want to help your business grow too. When you hire me, you work with me directly, from the first call to launch and every text after.</p>
         <div class="about-points">
           <span>One person, start to finish</span>
           <span>Direct line to me</span>
@@ -724,8 +723,9 @@
             <div class="rl">Founder &amp; Designer, Flower Bloom Studios</div>
           </div>
         </div>
-        <div style="margin-top:28px">
-          <a href="#contact" class="btn btn-primary">Book My Free Call →</a>
+        <div style="margin-top:28px;display:flex;gap:14px;flex-wrap:wrap">
+          <a href="about.html" class="btn btn-primary">More About Me →</a>
+          <a href="#contact" class="btn btn-outline">Book a Free Call</a>
         </div>
       </div>
     </div>
