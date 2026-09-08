@@ -633,25 +633,9 @@
       <div class="eyebrow" style="color:var(--green-light)">Client Results</div>
       <h2 class="h2">Join the businesses that finally look as good online as they do on the job.</h2>
     </div>
-    <div class="grid grid-3">
-      <div class="quote-card">
-        <span class="stars">★★★★★</span>
-        <h3>"A website I'm proud to have my name on."</h3>
-        <p>"We entrusted Reid to build our website and we sure are glad we did. His creative mind and writing brought my website to life."</p>
-        <div class="who">Mike K. <span>· Core Building</span></div>
-      </div>
-      <div class="quote-card">
-        <span class="stars">★★★★★</span>
-        <h3>"He absolutely crushed it."</h3>
-        <p>"I hired Reid to build the website for my pressure washing company, and he absolutely crushed it. His communication was top notch from day one, keeping me in the loop through the whole process. He delivered a high quality site that perfectly fits my brand. If you're looking for a professional, reliable web design, this is the right place."</p>
-        <div class="who">Riley A. <span>· ProClean Surface Works</span></div>
-      </div>
-      <div class="quote-card">
-        <span class="stars">★★★★★</span>
-        <h3>"Clean and professional without feeling stiff."</h3>
-        <p>"Reid got what I was going for. The whole process was super easy, and I'm seriously happy with how it turned out."</p>
-        <div class="who">Patrick S. <span>· PScott Productions</span></div>
-      </div>
+    <!-- Reviews: localmarketingmanager widget (replaces the static testimonials) -->
+    <div id="reviewsWidgetContainer">
+      <iframe id="reviewsWidget" style="width: 100%; border: none; min-height: 300px;" title="Reviews Widget"></iframe>
     </div>
   </div>
 </section>
@@ -922,6 +906,38 @@
     window.addEventListener('resize', apply, { passive:true });
     window.addEventListener('load', apply);
     setTimeout(apply,400); setTimeout(apply,1500);
+  })();
+</script>
+<script>
+  // Reviews widget (localmarketingmanager): pick pageSize by container width, set iframe src.
+  (function() {
+    function getPageSizeForWidth(width) {
+      if (width < 450) return 1;
+      if (width < 675) return 2;
+      if (width < 918) return 3;
+      if (width < 1144) return 4;
+      return 5;
+    }
+    function setIframeSrc() {
+      const iframe = document.getElementById("reviewsWidget");
+      const container = document.getElementById("reviewsWidgetContainer");
+      if (!iframe || !container) { setTimeout(setIframeSrc, 50); return; }
+      const width = container.offsetWidth;
+      if (width === 0) { setTimeout(setIframeSrc, 50); return; }
+      const pageSize = getPageSizeForWidth(width);
+      const expectedSrc = "https://www.localmarketingmanager.com/api/reviews/flower-bloom-studios-baton-rouge-web-design-review-widget?pageSize=" + pageSize;
+      if (iframe.src !== expectedSrc) { iframe.src = expectedSrc; }
+    }
+    function init() {
+      setIframeSrc();
+      setTimeout(setIframeSrc, 50);
+      window.addEventListener("resize", setIframeSrc);
+    }
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', init);
+    } else {
+      init();
+    }
   })();
 </script>
 </body>
