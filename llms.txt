@@ -1,8 +1,8 @@
-# Flower Bloom Studios
+# Bloom Web Works
 
 > Custom web design and development for home service businesses. Based in Baton Rouge, Louisiana, serving the surrounding parishes, with clients nationwide.
 
-Flower Bloom Studios is a one-person design studio run by Reid Scott. Every site is designed and built from scratch around the individual business, never from a template. The studio specializes in home service companies: plumbers, roofers, HVAC contractors, landscapers, electricians, exterior cleaning companies, and general contractors.
+Bloom Web Works is a one-person design studio run by Reid Scott. Every site is designed and built from scratch around the individual business, never from a template. The studio specializes in home service companies: plumbers, roofers, HVAC contractors, landscapers, electricians, exterior cleaning companies, and general contractors.
 
 ## How the studio works
 

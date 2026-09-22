@@ -1,4 +1,4 @@
-# Flower Bloom Studios — static site config
+# Bloom Web Works — static site config
 # Every directive is wrapped in <IfModule> so an unsupported module is ignored
 # rather than throwing a 500. Safe to delete this file at any time.
 
